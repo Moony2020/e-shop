@@ -1,0 +1,198 @@
+// /* 
+// {
+//     "trending_products": "المنتجات الرائجة",
+//     "add_to_cart": "أضف إلى السلة",
+//     "buy_now": "اشترِ الآن",
+//     "welcome_message": "مرحبًا بك في متجرنا!",
+//     "search_placeholder": "ابحث عن المنتجات...",
+//     "cart_empty": "سلتك فارغة",
+//     "checkout": "الدفع",
+//     "order_summary": "ملخص الطلب",
+//     "total_price": "السعر الإجمالي",
+//     "continue_shopping": "تابع التسوق",
+//     "product_details": "تفاصيل المنتج",
+//     "customer_reviews": "آراء العملاء",
+//     "related_products": "منتجات ذات صلة",
+//     "footer": {
+//         "about_us": "معلومات عنا",
+//         "contact_us": "اتصل بنا",
+//         "privacy_policy": "سياسة الخصوصية",
+//         "terms_of_service": "شروط الخدمة",
+//         "follow_us": "تابعنا على"
+//     },
+//     "header": {
+//         "home": "الرئيسية",
+//         "shop": "تسوق",
+//         "blog": "مدونة",
+//         "cart": "عربة التسوق",
+//         "account": "حسابي"
+//     },
+//     "product": {
+//         "description": "وصف",
+//         "specifications": "المواصفات",
+//         "reviews": "المراجعات",
+//         "add_to_wishlist": "أضف إلى قائمة الرغبات",
+//         "in_stock": "متوفر في المخزون",
+//         "out_of_stock": "غير متوفر في المخزون"
+//     },
+//     "checkout": {
+//         "billing_details": "تفاصيل الفوترة",
+//         "shipping_details": "تفاصيل الشحن",
+//         "payment_method": "طريقة الدفع",
+//         "place_order": "إتمام الطلب",
+//         "order_confirmation": "تأكيد الطلب",
+//         "thank_you": "شكرًا لك على طلبك!"
+//     },
+//     "error_messages": {
+//         "product_not_found": "المنتج غير موجود",
+//         "cart_update_failed": "فشل تحديث السلة",
+//         "payment_failed": "فشل الدفع",
+//         "network_error": "خطأ في الشبكة، يرجى المحاولة لاحقًا"
+//     },
+//     "success_messages": {
+//         "product_added": "تمت إضافة المنتج إلى السلة",
+//         "order_placed": "تم تقديم الطلب بنجاح",
+//         "profile_updated": "تم تحديث الملف الشخصي بنجاح",
+//         "password_changed": "تم تغيير كلمة المرور بنجاح"
+//     },
+//     "user_account": {
+//         "login": "تسجيل الدخول",
+//         "register": "إنشاء حساب",
+//         "logout": "تسجيل الخروج",
+//         "profile": "الملف الشخصي",
+//         "order_history": "تاريخ الطلبات",
+//         "wishlist": "قائمة الرغبات"
+//     },
+//     "blog": {
+//         "latest_posts": "أحدث المشاركات",
+//         "read_more": "اقرأ المزيد",
+//         "categories": "الفئات",
+//         "tags": "العلامات"
+//     },
+//     "search": {
+//         "search_results": "نتائج البحث",
+//         "no_results_found": "لم يتم العثور على نتائج",
+//         "search_again": "ابحث مرة أخرى"
+//     },
+//     "newsletter": {
+//         "subscribe": "اشترك في النشرة الإخبارية",
+//         "email_placeholder": "أدخل بريدك الإلكتروني",
+//         "subscribe_button": "اشترك الآن",
+//         "thank_you_subscription": "شكرًا لك على الاشتراك!"
+//     },
+//     "contact": {
+//         "get_in_touch": "تواصل معنا",
+//         "name": "الاسم",
+//         "email": "البريد الإلكتروني",
+//         "message": "رسالة",
+//         "send_message": "إرسال رسالة",
+//         "address": "العنوان",
+//         "phone": "الهاتف"
+//     },
+//     "payment": {
+//         "credit_card": "بطاقة ائتمان",
+//         "paypal": "باي بال",
+//         "payment_successful": "تم الدفع بنجاح",
+//         "payment_failed": "فشل الدفع، يرجى المحاولة مرة أخرى"
+//     },
+//     "shipping": {
+//         "shipping_address": "عنوان الشحن",
+//         "shipping_method": "طريقة الشحن",
+//         "estimated_delivery": "التسليم المتوقع",
+//         "tracking_number": "رقم التتبع"
+//     },
+//     "wishlist": {
+//         "your_wishlist": "قائمة الرغبات الخاصة بك",
+//         "remove_from_wishlist": "إزالة من قائمة الرغبات",
+//         "move_to_cart": "نقل إلى السلة",
+//         "empty_wishlist": "قائمة الرغبات فارغة"
+//     },
+//     "footer_links": {
+//         "privacy_policy": "سياسة الخصوصية",
+//         "terms_conditions": "الشروط والأحكام",
+//         "return_policy": "سياسة الإرجاع",
+//         "shipping_info": "معلومات الشحن",
+//         "faq": "الأسئلة الشائعة"
+//     },
+//     "icons": {
+//         "cart": "عربة التسوق",
+//         "search": "بحث",
+//         "user": "مستخدم",
+//         "heart": "قلب",
+//         "home": "منزل"
+//     },
+//     "buttons": {
+//         "add_to_cart": "أضف إلى السلة",
+//         "buy_now": "اشترِ الآن",
+//         "view_details": "عرض التفاصيل",
+//         "checkout": "الدفع",
+//         "continue_shopping": "تابع التسوق"
+//     },
+//     "placeholders": {
+//         "search": "ابحث عن المنتجات...",
+//         "email": "البريد الإلكتروني",
+//         "password": "كلمة المرور",
+//         "name": "الاسم",
+//         "message": "رسالة"
+//     },
+//     "labels": {
+//         "email": "البريد الإلكتروني",
+//         "password": "كلمة المرور",
+//         "remember_me": "تذكرني",
+//         "forgot_password": "نسيت كلمة المرور؟",
+//         "login": "تسجيل الدخول",
+//         "register": "إنشاء حساب"
+//     },
+//     "validation": {
+//         "required": "هذا الحقل مطلوب",
+//         "email_invalid": "البريد الإلكتروني غير صالح",
+//         "password_min_length": "يجب أن تكون كلمة المرور 6 أحرف على الأقل",
+//         "confirm_password": "تأكيد كلمة المرور",
+//         "passwords_do_not_match": "كلمات المرور غير متطابقة"
+//     },
+//     "success_messages": {
+//         "item_added_to_cart": "تمت إضافة العنصر إلى السلة",
+//         "order_placed": "تم تقديم الطلب بنجاح",
+//         "profile_updated": "تم تحديث الملف الشخصي بنجاح",
+//         "password_changed": "تم تغيير كلمة المرور بنجاح"
+//     },
+//     "error_messages": {
+//         "item_not_found": "العنصر غير موجود",
+//         "order_failed": "فشل الطلب، يرجى المحاولة لاحقًا",
+//         "profile_update_failed": "فشل تحديث الملف الشخصي",
+//         "password_change_failed": "فشل تغيير كلمة المرور"
+//     },
+//     "loading": {
+//         "loading": "جارٍ التحميل...",
+//         "please_wait": "يرجى الانتظار",
+//         "fetching_data": "جارٍ جلب البيانات"
+//     },
+//     "confirmation": {
+//         "are_you_sure": "هل أنت متأكد؟",
+//         "yes": "نعم",
+//         "no": "لا",
+//         "confirm": "تأكيد",
+//         "cancel": "إلغاء"
+//     },
+//     "modals": {
+//         "success": {
+//             "title": "نجاح",
+//             "message": "تمت العملية بنجاح"
+//         },
+//         "error": {
+//             "title": "خطأ",
+//             "message": "حدث خطأ ما، يرجى المحاولة لاحقًا"
+//         },
+//         "warning": {
+//             "title": "تحذير",
+//             "message": "يرجى التحقق من المعلومات المدخلة"
+//         }
+//     },
+//     "tooltips": {
+//         "add_to_cart": "أضف إلى السلة",
+//         "view_details": "عرض التفاصيل",
+//         "remove_from_cart": "إزالة من السلة",
+//         "checkout": "الدفع"
+//     }
+// }
+//     */

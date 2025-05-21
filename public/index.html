@@ -1,0 +1,1750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-shop</title>
+  <meta name="Author" content="Mymoon Dobaibi" />
+  <meta name="Description" content="e-commerce" />
+  <meta name="Keywords" content="e-commerce, clothes, electronic, sport, beauty" />
+  <link rel="icon" href="img/favicon.png" type="image/png" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/auth.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/2f77fa652c.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="shortcut icon" href="./assets/images_readme/logo/logoWhite.png" />
+  <!-- <link rel="stylesheet" href="./css/index.css" /> -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <div id="page" class="site home-page">
+    <aside class="site-off desktop-hide">
+      <div class="off-canvas">
+        <div class="canvas-head wrapperItem">
+          <a href="#home" class="logo">
+            <div class="logo-top">e.</div>
+            <div class="logo-bottom">Shop</div>
+          </a>
+          <a href="#" class="t-close flexcenter"><i class="ri-close-line"></i></a>
+        </div>
+        <div class="departments"></div>
+        <nav></nav>
+        <div class="thetop-nav"></div>
+      </div>
+    </aside>
+
+    <header>
+      <!-- header top -->
+      <div class="headerTop mobile-hide">
+        <div class="container">
+          <div class="wrapper wrapperItem">
+            <div class="left">
+              <ul class="wrapperItem wrapper-links">
+                <li><a href="category-page.html" class="category-filter-trigger">Categories</a></li>
+                <li><a href="offer-page.html">Offer</a></li>
+                <li><a href="index.html#featured-products">Featured Products</a></li>
+              </ul>
+            </div>
+            <div class="right">
+              <ul class="wrapperItem">
+                <!-- This will be dynamically updated by JavaScript -->
+                <!-- Replace the existing account-link div with this simplified version -->
+                <li class="account-link header-account">
+                  <a href="signin.html" class="account-toggle">
+                    <i class="ri-user-line auth-icon"></i>
+                    <span class="user-name">Sign In</span>
+                  </a>
+                  <a href="#logout" class="auth-dropdown-logout" id="logout-link" style="display: none;">
+                    <i class="ri-logout-box-r-line"></i> 
+                  </a>
+                </li>
+                <!-- <li class="account-link header-account">
+                  <div class="account-toggle">
+                      <i class="ri-user-line auth-icon"></i>
+                      <span class="user-name">Sign In</span>
+                  </div>
+                  <div class="auth-dropdown">
+                      <a href="signin.html" class="auth-dropdown-item" id="signin-link">Sign In</a>
+                      <a href="signup.html" class="auth-dropdown-item" id="signup-link">Sign Up</a>
+                      <a href="#logout" class="auth-dropdown-item auth-dropdown-logout" id="logout-link" style="display: none;">Sign Out</a>
+                  </div>
+                </li> -->
+                <li class="order-tracking"><a href="#">Order Tracking</a></li>
+                <li class="currency">
+                  <!-- <a href="#" class="currency-toggle">USD<span class="arrow-icon">
+                      <i class="ri-arrow-down-s-fill"></i></span></a> -->
+                  <a href="#"><span class="currency-label">USD</span> <i class="ri-arrow-down-s-fill"></i></a>
+                  <ul>
+                    <li class="current"><a href="#">USD</a></li>
+                    <li><a href="#">SEK</a></li>
+                    <li><a href="#">EURO</a></li>
+                    <li><a href="#">GBP</a></li>
+                  </ul>
+                </li>
+                <li class="lan">
+                  <a href="#">English<span class="arrow-icon"></span> <i class="ri-arrow-down-s-fill"></i></a>
+                  <ul>
+                    <li class="current"><a href="#">English</a></li>
+                    <li><a href="#">Swedish</a></li>
+                    <li><a href="#">Arabic</a></li>
+                  </ul>
+                </li>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- header-nav -->
+      <div class="headerNav">
+        <div class="container">
+          <div class="wrapper wrapperItem">
+            <a href="#" class="trigger desktop-hide">
+              <div class="hamburger">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+              </div>
+            </a>
+            <div class="left wrapperItem">
+              <a href="./index.html#home" class="logo">
+                <div class="logo-top">e.</div>
+                <div class="logo-bottom">Shop</div>
+              </a>
+              <nav class="mobile-hide">
+                <ul class="wrapperItem wrapper-links">
+                  <li><a href="./index.html" class="active">Home</a></li>
+                  <li><a href="#">Men</a></li>
+                  <li class="has-child">
+                    <a href="#">Women
+                      <div class="arrow-icon">
+                        <div class="small-icon"><i class="ri-arrow-down-s-line"></i></div>
+                      </div>
+                    </a>
+
+                    <div class="Women-arrow">
+                      <div class="container">
+                        <div class="wrapper">
+                          <div class="row">
+                            <h3>Women's Clothing</h3>
+                            <ul>
+                              <li><a href="#">Dresses</a></li>
+                              <li><a href="#">Jeans</a></li>
+                              <li><a href="#">Pajamas</a></li>
+                              <li><a href="#">Shorts</a></li>
+                              <li><a href="#">Swimwear</a></li>
+                              <li><a href="#">Sweaters</a></li>
+                              <li><a href="#">Jackets & Coats</a></li>
+                              <li><a href="#">Pants & Capris</a></li>
+                              <li><a href="#">Tops & Blouses</a></li>
+                              <li><a href="#">Skirts</a></li>
+                              <li><a href="#">Activewear</a></li>
+                              <li><a href="#">Lingerie</a></li>
+                              <li><a href="#">Suits</a></li>
+                              <li><a href="#">Accessories</a></li>
+                              <li><a href="#">Footwear</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="wrapper">
+                          <div class="row">
+                            <h3>Jewelry</h3>
+                            <ul>
+                              <li><a href="#">Rings</a></li>
+                              <li><a href="#">Necklaces</a></li>
+                              <li><a href="#">Earrings</a></li>
+                              <li><a href="#">Bracelets</a></li>
+                              <li><a href="#">Pendants</a></li>
+                              <li><a href="#">Brooches</a></li>
+                              <li><a href="#">Anklets</a></li>
+                              <li><a href="#">Cufflinks</a></li>
+                              <li><a href="#">Charms</a></li>
+                              <li><a href="#">Watches</a></li>
+                              <li><a href="#">Sets</a></li>
+                              <li><a href="#">Body Jewelry</a></li>
+                              <li><a href="#">Jewelry Boxes</a></li>
+                              <li><a href="#">Cleaning & Care</a></li>
+                              <li><a href="#">Accessories</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="wrapper">
+                          <div class="row">
+                            <h3>Beauty</h3>
+                            <ul>
+                              <li><a href="#">Makeup & Cosmetics</a></li>
+                              <li><a href="#">Skin Care</a></li>
+                              <li><a href="#">Hair Care</a></li>
+                              <li><a href="#">Fragrances</a></li>
+                              <li><a href="#">Face Masks</a></li>
+                              <li><a href="#">Spa Kits & Gifts</a></li>
+                              <li><a href="#">Nail Care</a></li>
+                              <li><a href="#">Bath & Body</a></li>
+                              <li><a href="#">Beauty Tools</a></li>
+                              <li><a href="#">Men's Grooming</a></li>
+                              <li><a href="#">Oral Care</a></li>
+                              <li><a href="#">Sun Care</a></li>
+                              <li><a href="#">Anti-Aging</a></li>
+                              <li><a href="#">Natural & Organic</a></li>
+                              <li><a href="#">Travel Size</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="wrapper">
+                          <div class="row">
+                            <h3>Top Brands</h3>
+                            <ul class="women-brands">
+                              <li><a href="#">Nike</a></li>
+                              <li><a href="#">H&M</a></li>
+                              <li><a href="#">Gucci</a></li>
+                              <li><a href="#">Zalando</a></li>
+                              <li><a href="#">Zara</a></li>
+                              <li><a href="#">Chanel</a></li>
+                              <li><a href="#">Prada</a></li>
+                              <li><a href="#">Louis Vuitton</a></li>
+                              <li><a href="#">Adidas</a></li>
+                              <li><a href="#">Versace</a></li>
+                              <li><a href="#">Dior</a></li>
+                              <li><a href="#">Uniqlo</a></li>
+                              <li><a href="#">Levi's</a></li>
+                              <li><a href="#">Calvin Klein</a></li>
+                              <li><a href="#">IKEA</a></li>
+                              <li><a href="#">Burberry</a></li>
+                            </ul>
+                            <a href="" class="view-all-brands">View all brands <i class="ri-arrow-right-line"></i></a>
+                          </div>
+                        </div>
+                        <div class="wrapper products">
+                          <div class="row">
+                            <div class="media">
+                              <div class="img-women-arrow"><a href="#"><img src="../assets/images/most-wanted1.jpg"
+                                    alt="most wanted clothes"></a></div>
+                            </div>
+                            <div class="text-content">
+                              <h4>Most wanted</h4>
+                              <a href="#" class="primary-button">Order Now</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li><a href="#">Kids</a></li>
+                  <li><a href="#">Sport<div class="fly-item"><span>New</span></div></a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="right">
+              <ul class="icon-container">
+                <li class="mobile-hide">
+                  <a href="#" class="wish-item wish-trigger">
+                    <div class="arrow-icon"><i class="ri-heart-line"></i></div>
+                    <div class="fly-item">
+                      <span class="item-number wishlist-count">0</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="./cart.html" class="iscart">
+                    <div class="arrow-icon"><i class="ri-shopping-cart-line"></i>
+                      <div class="fly-item">
+                        <span class="item-number cart-count">0</span>
+                      </div>
+                    </div>
+                    <div class="icon-text">
+                      <div class="mini-text">Total</div>
+                      <div class="cart-total">$0.00</div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+                         
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- header main -->
+      <div class="header-main mobile-hide">
+        <div class="container">
+          <div class="wrapper wrapperItem">
+            <!-- departments list -->
+            <div class="left">
+              <div class="departments-cat">
+                <div class="departments-head">
+                  <div class="main-text">All Departments</div>
+                  <div class="mini-text mobile-hide">Total 1000 Products</div>
+                  <a href="#" class="departments-trigger mobile-hide">
+                    <div class="hamburger">
+                      <div class="line line-1"></div>
+                      <div class="line line-2"></div>
+                      <div class="line line-3"></div>
+                    </div>
+                  </a>
+                </div>
+                <div class="departments-menu">
+                  <ul class="second-links">
+                    <li class="has-child electronic">
+                      <a href="departments-header">
+                        <div class="large-icon"><i class="ri-bluetooth-connect-fill"></i></div>
+                        Electronic
+                        <div class="small-icon"><i class="ri-arrow-right-s-line"></i></div>
+                      </a>
+                      <ul>
+                        <li><a href="#">Smartphones</a></li>
+                        <li><a href="#">Laptops</a></li>
+                        <li><a href="#">Cameras</a></li>
+                        <li><a href="#">Headphones</a></li>
+                        <li><a href="#">Smart Home Devices</a></li>
+                        <li><a href="#">Gaming Consoles</a></li>
+                      </ul>
+                    </li>
+                    <li class="has-child healthAndWellness">
+                      <a href="departments-header">
+                        <div class="large-icon"><i class="ri-heart-pulse-fill"></i></div>
+                        Health & Wellness
+                      </a>
+                    </li>
+                    <li class="has-child beauty">
+                      <a href="departments-header">
+                        <div class="large-icon"><i class="ri-brush-fill"></i></div>
+                        Beauty
+                        <div class="small-icon"><i class="ri-arrow-right-s-line"></i></div>
+                      </a>
+                      <ul>
+                        <li><a href="#">Makeup & Cosmetics</a></li>
+                        <li><a href="#">Skin Care</a></li>
+                        <li><a href="#">Hair Care</a></li>
+                        <li><a href="#">Fragrances</a></li>
+                        <li><a href="#">Face Masks</a></li>
+                        <li><a href="#">Spa Kits & Gifts</a></li>
+                        <li><a href="#">Nail Care</a></li>
+                        <li><a href="#">Bath & Body</a></li>
+                        <li><a href="#">Beauty Tools</a></li>
+                        <li><a href="#">Men's Grooming</a></li>
+                        <li><a href="#">Oral Care</a></li>
+                        <li><a href="#">Sun Care</a></li>
+                        <li><a href="#">Anti-Aging</a></li>
+                        <li><a href="#">Natural & Organic</a></li>
+                        <li><a href="#">Travel Size</a></li>
+                      </ul>
+                    </li>
+                    <li class="has-child womensFashion">
+                      <a href="departments-header">
+                        <div class="large-icon"><i class="ri-t-shirt-air-fill"></i></div>
+                        Women's Fashion
+                        <div class="small-icon"><i class="ri-arrow-right-s-line"></i></div>
+                      </a>
+                      <ul>
+                        <li><a href="#">Dresses</a></li>
+                        <li><a href="#">Jeans</a></li>
+                        <li><a href="#">Pajamas</a></li>
+                        <li><a href="#">Shorts</a></li>
+                        <li><a href="#">Sweaters</a></li>
+                      </ul>
+                    </li>
+                    <li class="has-child mensFashion">
+                      <a href="departments-header">
+                        <div class="large-icon"><i class="ri-shirt-fill"></i></div>
+                        Men's Fashion
+                        <div class="small-icon"><i class="ri-arrow-right-s-line"></i></div>
+                      </a>
+                      <ul>
+                        <li><a href="#">Shirts</a></li>
+                        <li><a href="#">Jeans</a></li>
+                        <li><a href="#">Suits</a></li>
+                        <li><a href="#">Trousers</a></li>
+                        <li><a href="#">Jackets & Coats</a></li>
+                      </ul>
+                    </li>
+                    <li class="has-child  girlsFashion">
+                      <a href="#">
+                        <div class="large-icon"><i class="ri-user-5-fill"></i></div>
+                        Girl's Fashion
+                      </a>
+                    </li>
+                    <li class="has-child  boysFashion">
+                      <a href="departments-header">
+                        <div class="large-icon"><i class="ri-user-6-fill"></i></div>
+                        Boy's Fashion
+                      </a>
+                    </li>
+                    <li class="has-child homeLiving" data-bg="img/menu/home_kitchen.jpg">
+                      <a href="departments-header">
+                        <div class="large-icon"><i class="ri-home-9-fill"></i></div>
+                        Home & Kitchen
+                        <div class="small-icon"><i class="ri-arrow-right-s-line"></i></div>
+                      </a>
+                      <div class="mega">
+                        <div class="flexcol">
+                          <div class="row">
+                            <h4><a href="#">Kitchen & Dining</a></h4>
+                            <ul>
+                              <li><a href="#">Cookware</a></li>
+                              <li><a href="#">Dinnerware</a></li>
+                              <li><a href="#">Kitchen Storage</a></li>
+                              <li><a href="#">Small Appliances</a></li>
+                              <li><a href="#">Bakeware</a></li>
+                            </ul>
+                          </div>
+                          <div class="row">
+                            <h4><a href="#">Living</a></h4>
+                            <ul>
+                              <li><a href="#">Furniture</a></li>
+                              <li><a href="#">Decor</a></li>
+                              <li><a href="#">Lighting</a></li>
+                              <li><a href="#">Storage Solutions</a></li>
+                              <li><a href="#">Rugs & Carpets</a></li>
+                              <li><a href="#">Wall Art</a></li>
+                              <li><a href="#">Curtains & Blinds</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="flexcol">
+                          <div class="row">
+                            <h4><a href="#">Bed & Bath</a></h4>
+                            <ul>
+                              <li><a href="#">Bed Linen</a></li>
+                              <li><a href="#">Bathroom Accessories</a></li>
+                              <li><a href="#">Pillows & Cushions</a></li>
+                              <li><a href="#">Mattresses</a></li>
+                              <li><a href="#">Towels</a></li>
+                            </ul>
+                          </div>
+                          <div class="row">
+                            <h4><a href="#">Utility</a></h4>
+                            <ul>
+                              <li><a href="#">Laundry</a></li>
+                              <li><a href="#">Garbage Bins</a></li>
+                              <li><a href="#">Cleaning Supplies</a></li>
+                              <li><a href="#">Ironing & Steamers</a></li>
+                              <li><a href="#">Storage Containers</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="flexcol">
+                          <div class="row">
+                            <h4><a href="#">Outdoor</a></h4>
+                            <ul>
+                              <li><a href="#">Patio Furniture</a></li>
+                              <li><a href="#">Garden Decor</a></li>
+                              <li><a href="#">Grills & BBQ</a></li>
+                              <li><a href="#">Outdoor Lighting</a></li>
+                              <li><a href="#">Poolhouse</a></li>
+                              <li><a href="#">Lawn Care</a></li>
+                              <li><a href="#">Outdoor Kitchen</a></li>
+                              <li><a href="#">Backyard</a></li>
+                              <li><a href="#">Fountains & Ponds</a></li>
+                              <li><a href="#">Planters & Gardening</a></li>
+                              <li><a href="#">Fire Pits</a></li>
+                              <li><a href="#">Outdoor Rugs</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="has-child travelLuggage">
+                      <a href="departments-header">
+                        <div class="large-icon"><i class="ri-suitcase-fill"></i></div>
+                        Travel & Luggage
+                        <div class="small-icon"><i class="ri-arrow-right-s-line"></i></div>
+                      </a>
+                      <ul>
+                        <li><a href="#">Carry-On Luggage</a></li>
+                        <li><a href="#">Checked Luggage</a></li>
+                        <li><a href="#">Travel Backpacks</a></li>
+                        <li><a href="#">Duffel Bags</a></li>
+                        <li><a href="#">Suitcases</a></li>
+                        <li><a href="#">Packing Organizers</a></li>
+                        <li><a href="#">Travel Accessories</a></li>
+                        <li><a href="#">Laptop Bags</a></li>
+                        <li><a href="#">Toiletry Bags</a></li>
+                        <li><a href="#">Travel Pillows & Comfort</a></li>
+                      </ul>
+                    </li>
+                    <li class="has-child portsAndOutdoors">
+                      <a href="departments-header">
+                        <div class="large-icon"><i class="ri-football-fill"></i></div>
+                        Sports & Outdoors
+                      </a>
+                    </li>
+                    <li class="has-child bestSeller">
+                      <a href="departments-header">
+                        <div class="large-icon"><i class="ri-shield-star-fill"></i></div>
+                        Best Seller
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Desktop search bar -->
+            <div class="right">
+              <div class="search-box">
+                <form id="search-form-desktop" action="" class="search">
+                  <span class="large-icon"><i class="ri-search-line"></i></span>
+                  <input type="search" id="searchInput" placeholder="Search for a product" />
+                  <button type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- slider -->
+      <div class="slider">
+        <div class="container">
+          <div class="wrapper">
+            <div class="myslider swiper">
+              <div class="swiper-wrapper">
+                <!-- Sports Shoes Slide -->
+                <div class="swiper-slide">
+                  <div class="item">
+                    <div class="image object-cover">
+                      <img src="./assets/slider/blue-sports-shoe-slider.jpg" alt="Sports Shoes" />
+                    </div>
+                    <div class="text-content flexcol">
+                      <h4>Performance & Style</h4>
+                      <h2><span>Experience Comfort & Speed</span><br /> <span>With the Latest Sports Shoes</span></h2>
+                      <a href="./tienda.html" class="primary-button">Get Yours Now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Women's Fashion Slide -->
+                <div class="swiper-slide">
+                  <div class="item">
+                    <div class="image object-cover">
+                      <img src="./assets/slider/high-fashion-slider.jpg" alt="Women's Fashion" />
+                    </div>
+                    <div class="text-content flexcol">
+                      <h4>Elegant & Chic</h4>
+                      <h2><span>Trendy Styles for Every Occasion</span><br /><span>Discover the Latest Women's
+                          Fashion</span></h2>
+                      <a href="./tienda.html" class="primary-button">Shop Now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Workout Gear Slide -->
+                <div class="swiper-slide">
+                  <div class="item">
+                    <div class="image object-cover">
+                      <img src="./assets/slider/workout-gear-slider.jpg" alt="Workout Gear" />
+                    </div>
+                    <div class="text-content flexcol">
+                      <h4>Train Like a Pro</h4>
+                      <h2><span>Upgrade Your Workout</span><br /><span>With High-Performance Gear</span></h2>
+                      <a href="./tienda.html" class="primary-button">Start Training</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Home & Living Discounts Slide -->
+                <div class="swiper-slide">
+                  <div class="item">
+                    <div class="image object-cover">
+                      <img src="./assets/slider/premium-beds-slider.jpg" alt="Home Discounts" />
+                    </div>
+                    <div class="text-content flexcol">
+                      <h4>Transform Your Home</h4>
+                      <h2><span>Exclusive Discounts Up to 50% OFF</span><br /><span>On Premium Beds & Mattresses</span>
+                      </h2>
+                      <a href="./tienda.html" class="primary-button">Shop Deals</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- New Arrivals Slide -->
+                <div class="swiper-slide">
+                  <div class="item">
+                    <div class="image object-cover">
+                      <img src="./assets/slider/asus-laptop-slider.jpg" alt="New Arrivals" />
+                    </div>
+                    <div class="text-content flexcol">
+                      <h4>Light Weight. Powerful. Elegant.</h4>
+                      <h2><span>Discover the All-New Asus Zenbook 14</span><br /><span>Ultra-Thin & High-Performance
+                          Laptop</span></h2>
+                      <a href="./tienda.html" class="primary-button">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- image tracking -->
+              <div class="swiper-pagination"></div>
+              <!-- Custom navigation arrows -->
+              <div class="swiper-button-prev-custom">
+                <i class="fa-solid fa-chevron-left"></i>
+              </div>
+              <div class="swiper-button-next-custom">
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- brands  -->
+      <div class="brands">
+        <div class="brand-slider">
+          <div class="container">
+            <div class="wrapper wrapperItem">
+              <!-- I leave some examples here, by the way I share a page to remove the funds from brand images (https://www.remove.bg/es) -->
+              <div class="item">
+                <a href="#">
+                  <img src="./assets/brands/asus.png" alt="Asus" />
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img src="./assets/brands/samsung.png" alt="Samsung" />
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img src="./assets/brands/zara.png" alt="Zara" />
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img src="./assets/brands/adidas.png" alt="Adidas" />
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img src="./assets/brands/gucci.png" alt="Gucci" />
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img src="./assets/brands/dior.png" alt="Dior" />
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img src="./assets/brands/H&M.png" alt="H&M" />
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img src="./assets/brands/zalando.png" alt="Zalando" />
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img src="./assets/brands/IKEA.png" alt="IKEA" />
+                </a>
+              </div>
+              <!-- dupicate brands / items for looping -->
+              <div class="item">
+                <a href="#">
+                  <img src="./assets/brands/asus.png" alt="Asus" />
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img src="./assets/brands/samsung.png" alt="Samsung" />
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img src="./assets/brands/zara.png" alt="Zara" />
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img src="./assets/brands/adidas.png" alt="Adidas" />
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img src="./assets/brands/gucci.png" alt="Gucci" />
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img src="./assets/brands/dior.png" alt="Dior" />
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img src="./assets/brands/H&M.png" alt="H&M" />
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img src="./assets/brands/zalando.png" alt="Zalando" />
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img src="./assets/brands/IKEA.png" alt="IKEA" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- trending products -->
+        <div class="trending">
+          <div class="container">
+            <div class="wrapper">
+              <!-- section title  -->
+              <div class="sectionTrending wrapperItem">
+                <!-- <h2>Trending Products</h2> -->
+                <h2 data-i18n="trending_products">Trending Products</h2>
+              </div>
+              <div class="column">
+                <div class="flexwrap">
+                  <!-- main trending product -->
+                  <div class="row products big">
+                    <div class="item" data-id="product-id-123">
+                      <!-- Add data-id  -->
+                      <div class="sale-badge pulse">
+                        <div class="offer-tag">Limited Time Offer</div>
+                      </div>
+                      <div class="offer-container" data-duration="345600">
+                        <!-- 12 hours -->
+                        <div class="offer-expiry">Sale ends in</div>
+                        <div class="offer">
+                          <ul>
+                            <li class="offer-days">00</li>
+                            <li class="offer-hours">00</li>
+                            <li class="offer-minutes">00</li>
+                            <li class="offer-seconds">00</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="media">
+                        <div class="product-image-link">
+                          <!-- <a href="./floral-midi-dress.html">
+                            <img src="./assets/images/most-wanted1.jpg" alt="Elegant Floral Midi Dress" />
+                          </a> -->
+                          <a href="offer-page.html?id=product-id-123" class="product-image-link">
+                            <img src="./assets/images/most-wanted1.jpg" alt="Elegant Floral Midi Dress" />
+                          </a>
+                        </div>
+                        <div class="hoverable">
+                          <ul>
+                            <li><a href="#"><i class="ri-heart-line"></i></a></li>
+                            <li><a href="#" class="add-to-cart"><i class="ri-shopping-cart-line"></i></a></li>
+                          </ul>
+                        </div>
+                        <!-- discount rate -->
+                        <div class="discount flexcenter">
+                          <span>21%</span>
+                        </div>
+                      </div>
+                      <div class="product-details">
+                        <div class="rating">
+                          <div class="stars"></div>
+                          <span class="mini-text">(2,474 Reviews)</span>
+                        </div>
+                        <h3 class="product-title">
+                          <a href="./floral-midi-dress.html">Elegant Floral Midi Dress</a>
+                        </h3>
+                        <p class="product-description">
+                          A charming floral midi dress with a tiered skirt and tie-straps, offering effortless style and
+                          comfort for any occasion.
+                        </p>
+                        <div class="color-options">
+                          <span class="option-label">Colors:</span>
+                          <div class="color-swatches">
+                            <form action="">
+                              <p>
+                                <input type="radio" name="color" id="coblue">
+                                <label for="coblue" class="circle"></label>
+                              </p>
+                              <p>
+                                <input type="radio" name="color" id="cogreen">
+                                <label for="cogreen" class="circle"></label>
+                              </p>
+                              <p>
+                                <input type="radio" name="color" id="cogray">
+                                <label for="cogray" class="circle"></label>
+                              </p>
+                            </form>
+                          </div>
+                        </div>
+                        <div class="size-selector">
+                          <select class="size-options" aria-label="Select Size">
+                            <option value="">Select Size</option>
+                            <option value="s">S</option>
+                            <option value="m">M</option>
+                            <option value="l">L</option>
+                            <option value="xl">XL</option>
+                          </select>
+                        </div>
+                        <div class="price">
+                          <span class="current-price" data-base="59.00">$ 59.00</span>
+                          <span class="original-price mini-text" data-base="75.00">$ 75.00</span>
+                        </div>
+                        <div class="inventory-info mini-text">
+                          <div class="qty-info">
+                            <span>Left: <strong class="qty-available">544</strong></span>
+                            <span>Sold: <strong class="qty-sold">2878</strong></span>
+                          </div>
+                          <div class="bar">
+                            <div class="available"></div>
+                          </div>
+                        </div>
+                        <div class="shipping-benefits">
+                          <i class="ri-truck-line"></i>
+                          <span>Free Shipping <br>• 30-Day Returns <br> • Eco-Friendly Packaging</span>
+                        </div>
+                        <button class=" secondary-button add-to-cart-btn add-to-cart" data-has-options="true">
+                          <i class="ri-shopping-cart-2-line"></i>
+                          Add to Cart
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- trending side products -->
+                  <div class="row products mini-trending">
+                    <div class="item" data-id="product-id-124">
+                      <!-- Add data-id here -->
+                      <div class="media">
+                        <div class="thumbnail object-cover">
+                          <a href="./single-page.html">
+                            <img src="./assets/images/new-mens-shoes.jpg" alt="new mens shoes" />
+                            <!-- zoom image <div class="image-zoom-container">
+                              <img src="./assets/images/new-mens-shoes.jpg" alt="Product" class="zoomable-image">
+                              <div class="zoom-lens"></div>
+                            </div> -->
+                          </a>
+                        </div>
+                        <div class="hoverable">
+                          <ul>
+                            <li><a href="#"><i class="ri-heart-line"></i></a></li>
+                            <li><a href="#" class="add-to-cart"><i class="ri-shopping-cart-line"></i></a></li>
+                          </ul>
+                        </div>
+                        <div class="discount flexcenter">
+                          <span>17%</span>
+                        </div>
+                      </div>
+                      <div class="product-details">
+                        <h3 class="wrapper-links">
+                          <a href="./single-page.html">New Mens Sports Running Casual Shoes</a>
+                        </h3>
+                        <div class="rating">
+                          <div class="stars"></div>
+                          <span class="mini-text">(174)</span>
+                        </div>
+                        <div class="price">
+                          <span class="current-price" data-base="58.00">$ 58.00</span>
+                          <span class="original-price mini-text" data-base="74.00">$ 74.00</span>
+                        </div>
+                        <!-- <button class="add-to-cart" data-has-options="true">Add to Cart</button> -->
+                        <div class="mini-text">
+                          <p>321 sold</p>
+                          <p><i class="ri-truck-line"></i> Free shipping</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item" data-id="product-id-125">
+                      <!-- Add data-id here -->
+                      <div class="media">
+                        <div class="thumbnail object-cover">
+                          <a href="./single-page.html">
+                            <img src="./assets/images/men-coat.jpg" alt="men coat" />
+                          </a>
+                        </div>
+                        <div class="hoverable">
+                          <ul>
+                            <li><a href="#"><i class="ri-heart-line"></i></a></li>
+                            <li><a href="#" class="add-to-cart"><i class="ri-shopping-cart-line"></i></a></li>
+                          </ul>
+                        </div>
+                        <div class="discount flexcenter">
+                          <span>42%</span>
+                        </div>
+                      </div>
+                      <div class="product-details">
+                        <h3 class="wrapper-links">
+                          <a href="./single-page.html">Castor Coat - Wool coats , H&M</a>
+                        </h3>
+                        <div class="rating">
+                          <div class="stars"></div>
+                          <span class="mini-text">(87)</span>
+                        </div>
+                        <div class="price">
+                          <span class="current-price" data-base="89.00">$ 89.00</span>
+                          <span class="original-price mini-text" data-base="155.00">$ 155.00</span>
+                        </div>
+                        <!-- <button class="add-to-cart" data-has-options="false">Add to Cart</button> -->
+                        <div class="mini-text">
+                          <!-- number of products sold -->
+                          <p>95 sold</p>
+                          <p class="leftinstock"><i class="ri-alarm-warning-line"></i> Stock: 13 left </p>
+                          <p><i class="ri-truck-line"></i> Free shipping</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item" data-id="product-id-126">
+                      <!-- Add data-id here -->
+                      <div class="media">
+                        <div class="thumbnail object-cover">
+                          <a href="./single-page.html">
+                            <img src="./assets/images/samsung-s25-ultra.jpg" alt="samsung galaxy s25 ulta" />
+                          </a>
+                        </div>
+                        <div class="hoverable">
+                          <ul>
+                            <li><a href="#"><i class="ri-heart-line"></i></a></li>
+                            <li><a href="#" class="add-to-cart"><i class="ri-shopping-cart-line"></i></a></li>
+                          </ul>
+                        </div>
+                        <div class="discount flexcenter">
+                          <span>23%</span>
+                        </div>
+                      </div>
+                      <div class="product-details">
+                        <h3 class="wrapper-links">
+                          <a href="./single-page.html">Samsung Galaxy S25 Ulta (256 GB)</a>
+                        </h3>
+                        <div class="rating">
+                          <div class="stars"></div>
+                          <span class="mini-text">(1,024)</span>
+                        </div>
+                        <div class="price">
+                          <span class="current-price" data-base="1149.00">$ 1149.00</span>
+                          <span class="original-price mini-text" data-base="1499.00">$ 1499.00</span>
+                        </div>
+                        <!-- <button class="add-to-cart" data-has-options="true">Add to Cart</button> -->
+                        <div class="mini-text">
+                          <!-- number of products sold -->
+                          <p>1,203 sold</p>
+                          <p><i class="ri-truck-line"></i> Free shipping</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item" data-id="product-id-127">
+                      <!-- Add data-id here -->
+                      <div class="media">
+                        <div class="thumbnail object-cover">
+                          <a href="./single-page.html">
+                            <img src="./assets/images/BaristaPro-coffee-machine.jpg" alt="BaristaPro coffee machine" />
+                          </a>
+                        </div>
+                        <div class="hoverable">
+                          <ul>
+                            <li><a href="#"><i class="ri-heart-line"></i></a></li>
+                            <li><a href="#" class="add-to-cart"><i class="ri-shopping-cart-line"></i></a></li>
+                          </ul>
+                        </div>
+                        <div class="discount flexcenter">
+                          <span>33%</span>
+                        </div>
+                      </div>
+                      <div class="product-details">
+                        <h3 class="wrapper-links">
+                          <a href="./single-page.html">BaristaPro Coffee Machine</a>
+                        </h3>
+                        <div class="rating">
+                          <div class="stars"></div>
+                          <span class="mini-text">(392)</span>
+                        </div>
+                        <div class="price">
+                          <span class="current-price" data-base="399.00">$ 399.00</span>
+                          <span class="original-price mini-text" data-base="599.00">$ 599.00</span>
+                        </div>
+                        <!-- <button class="add-to-cart" data-has-options="false">Add to Cart</button> -->
+                        <div class="mini-text">
+                          <!-- number of products sold -->
+                          <p>487 sold</p>
+                          <p><i class="ri-truck-line"></i> Free shipping</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row products mini-trending second-trending-column">
+                    <div class="item" data-id="product-id-128">
+                      <!-- Add data-id here -->
+                      <div class="media">
+                        <div class="thumbnail object-cover">
+                          <a href="./single-page.html">
+                            <img src="./assets/images/pink-dress-summer-fashion.jpg" alt="pink dress summer fashion" />
+                          </a>
+                        </div>
+                        <div class="hoverable">
+                          <ul>
+                            <li><a href="#"><i class="ri-heart-line"></i></a></li>
+                            <li><a href="#" class="add-to-cart"><i class="ri-shopping-cart-line"></i></a></li>
+                          </ul>
+                        </div>
+                        <div class="discount flexcenter">
+                          <span>18%</span>
+                        </div>
+                      </div>
+                      <div class="product-details">
+                        <h3 class="wrapper-links">
+                          <a href="./single-page.html">Pink Luxury Dress, Summer Fashion</a>
+                        </h3>
+                        <div class="rating">
+                          <div class="stars"></div>
+                          <span class="mini-text">(223)</span>
+                        </div>
+                        <div class="price">
+                          <span class="current-price" data-base="57.00">$ 57.00</span>
+                          <span class="original-price mini-text" data-base="70.00">$ 70.00</span>
+                        </div>
+                        <!-- <button class="add-to-cart" data-has-options="true">Add to Cart</button> -->
+                        <div class="mini-text">
+                          <!-- number of products sold -->
+                          <p>634 sold</p>
+                          <p><i class="ri-truck-line"></i> Free shipping</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item" data-id="product-id-129">
+                      <!-- Add data-id here -->
+                      <div class="media">
+                        <div class="thumbnail object-cover">
+                          <a href="./single-page.html">
+                            <img src="./assets/images/skinny-jeans-men.jpg" alt="skinny jeans men" />
+                          </a>
+                        </div>
+                        <div class="hoverable">
+                          <ul>
+                            <li><a href="#"><i class="ri-heart-line"></i></a></li>
+                            <li><a href="#" class="add-to-cart"><i class="ri-shopping-cart-line"></i></a></li>
+                          </ul>
+                        </div>
+                        <div class="discount flexcenter">
+                          <span>43%</span>
+                        </div>
+                      </div>
+                      <div class="product-details">
+                        <h3 class="wrapper-links">
+                          <a href="./single-page.html">Light Blue Men's Skinny Stretch Jeans</a>
+                        </h3>
+                        <div class="rating">
+                          <div class="stars"></div>
+                          <span class="mini-text">(156)</span>
+                        </div>
+                        <div class="price">
+                          <span class="current-price" data-base="34.00">$ 34.00</span>
+                          <span class="original-price mini-text" data-base="60.00">$ 60.00</span>
+                        </div>
+                        <!-- <button class="add-to-cart" data-has-options="false">Add to Cart</button> -->
+                        <div class="mini-text">
+                          <!-- number of products sold -->
+                          <p>343 sold</p>
+                          <p><i class="ri-truck-line"></i> Free shipping</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item" data-id="product-id-120">
+                      <!-- Add data-id -->
+                      <div class="media">
+                        <div class="thumbnail object-cover">
+                          <a href="./single-page.html">
+                            <img src="./assets/images/3-seat-sofa-with-chaise-longue.jpg"
+                              alt="3 seat sofa with chaise longue, gray/black" />
+                          </a>
+                        </div>
+                        <div class="hoverable">
+                          <ul>
+                            <li><a href="#"><i class="ri-heart-line"></i></a></li>
+                            <li><a href="#" class="add-to-cart"><i class="ri-shopping-cart-line"></i></a></li>
+                          </ul>
+                        </div>
+                        <div class="discount flexcenter">
+                          <span>15%</span>
+                        </div>
+                      </div>
+                      <div class="product-details">
+                        <h3 class="wrapper-links">
+                          <a href="./single-page.html">3 Seat Sofa With Chaise Longue IKEA</a>
+                        </h3>
+                        <div class="rating">
+                          <div class="stars"></div>
+                          <span class="mini-text">(192)</span>
+                        </div>
+                        <div class="price">
+                          <span class="current-price" data-base="796.00">$ 796.00</span>
+                          <span class="original-price mini-text" data-base="939.00">$ 939.00</span>
+                        </div>
+                        <!-- <button class="add-to-cart" data-has-options="false">Add to Cart</button> -->
+                        <div class="mini-text">
+                          <!-- number of products sold -->
+                          <p>234 sold</p>
+                          <p><i class="ri-truck-line"></i> Free shipping</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item" data-id="product-id-133">
+                      <!-- Add data-id -->
+                      <div class="media">
+                        <div class="thumbnail object-cover">
+                          <a href="./single-page.html">
+                            <img src="./assets/images/samsung-galaxy-buds3-pro.jpg" alt="samsung galaxy buds3 pro" />
+                          </a>
+                        </div>
+                        <div class="hoverable">
+                          <ul>
+                            <li><a href="#"><i class="ri-heart-line"></i></a></li>
+                            <li><a href="#" class="add-to-cart"><i class="ri-shopping-cart-line"></i></a></li>
+                          </ul>
+                        </div>
+                        <div class="discount flexcenter">
+                          <span>26%</span>
+                        </div>
+                      </div>
+                      <div class="product-details">
+                        <h3 class="wrapper-links">
+                          <a href="./single-page.html">Samsung Galaxy Buds3 Pro</a>
+                        </h3>
+                        <div class="rating">
+                          <div class="stars"></div>
+                          <span class="mini-text">(1311)</span>
+                        </div>
+                        <div class="price">
+                          <span class="current-price" data-base="220.00">$ 220.00</span>
+                          <span class="original-price mini-text" data-base="299.00">$ 299.00</span>
+                        </div>
+                        <!-- <button class="add-to-cart" data-has-options="true">Add to Cart</button> -->
+                        <div class="mini-text">
+                          <!-- number of products sold -->
+                          <p>1890 sold</p>
+                          <p class="leftinstock"><i class="ri-alarm-warning-line"></i> Stock: 13 left </p>
+                          <p><i class="ri-truck-line"></i> Free shipping</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- features -->
+        <div class="features">
+          <div class="container">
+            <div class="wrapper">
+              <div class="sectionFeatures wrapperItem">
+                <h2>
+                  <span>Featured Products</span>
+                </h2>
+                <div class="second-links">
+                  <a href="./tienda.html" class="view-all">Show all<i class="ri-arrow-right-line"></i></a>
+                </div>
+              </div>
+              <div class="column">
+                <div class="products main flexwrap">
+                  <div class="item" data-id="product-id-123">
+                    <!-- data-id -->
+                    <div class="media">
+                      <div class="thumbnail object-cover">
+                        <a href="./floral-midi-dress.html">
+                          <img src="./assets/images/most-wanted1.jpg" alt="Elegant Floral Midi Dress" />
+                        </a>
+                      </div>
+                      <div class="hoverable">
+                        <ul>
+                          <li class="active"><a href="#"><i class="ri-heart-line"></i></a> </li>
+                          <li class="active"><a href="#" class="add-to-cart"><i class="ri-shopping-cart-line"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="discount flexcenter">
+                        <span>21%</span>
+                      </div>
+                    </div>
+                    <div class="product-details">
+                      <div class="rating">
+                        <div class="stars"></div>
+                        <span class="mini-text">(2,474 Reviews)</span>
+                      </div>
+                      <h3 class="product-title">
+                        <a href="./single-page.html#">Elegant Floral Midi Dress</a>
+                      </h3>
+                      <div class="price">
+                        <span class="current-price" data-base="59.00">$ 59.00</span>
+                        <span class="original-price mini-text" data-base="75.00">$ 75.00</span>
+                      </div>
+                      <!-- <button class="add-to-cart" data-has-options="true">Add to Cart</button> -->
+                      <div class="product-highlights">
+                        <span>🌺 Light weight</span><br>
+                        <span>🎀 Adjustable waist belt</span><br>
+                        <span>💃 Casual & formal</span><br>
+                        <span>👗 Multi-color options</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item" data-id="product-id-124">
+                    <!-- data-id -->
+                    <div class="media">
+                      <div class="thumbnail object-cover">
+                        <a href="./floral-midi-dress.html">
+                          <img src="./assets/images/new-mens-shoes.jpg" alt="new mens shoes" />
+                        </a>
+                      </div>
+                      <div class="hoverable">
+                        <ul>
+                          <li class="active"><a href="#"><i class="ri-heart-line"></i></a> </li>
+                          <li class="active"><a href="#" class="add-to-cart"><i class="ri-shopping-cart-line"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="discount flexcenter">
+                        <span>17%</span>
+                      </div>
+                    </div>
+                    <div class="product-details">
+                      <div class="rating">
+                        <div class="stars"></div>
+                        <span class="mini-text">(174 Reviews)</span>
+                      </div>
+                      <h3 class="product-title">
+                        <a href="./single-page.html">New Mens Sports Running Casual Shoes</a>
+                      </h3>
+                      <div class="price">
+                        <span class="current-price" data-base="58.00">$ 58.00</span>
+                        <span class="original-price mini-text" data-base="74.00">$ 74.00</span>
+                      </div>
+                      <!-- <button class="add-to-cart" data-has-options="true">Add to Cart</button> -->
+                      <div class="product-highlights">
+                        <span>👟 Light weight</span><br>
+                        <span>💨 Soft Sole</span><br>
+                        <span>🌧️ Water-resistant</span><br>
+                        <span>🏃 Non-slip for stability</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item" data-id="product-id-128">
+                    <!-- data-id -->
+                    <div class="media">
+                      <div class="thumbnail object-cover">
+                        <a href="./floral-midi-dress.html">
+                          <img src="./assets/images/pink-dress-summer-fashion.jpg" alt="pink dress summer fashion" />
+                        </a>
+                      </div>
+                      <div class="hoverable">
+                        <ul>
+                          <li class="active"><a href="#"><i class="ri-heart-line"></i></a> </li>
+                          <li class="active"><a href="#" class="add-to-cart"><i class="ri-shopping-cart-line"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="discount flexcenter">
+                        <span>18%</span>
+                      </div>
+                    </div>
+                    <div class="product-details">
+                      <div class="rating">
+                        <div class="stars"></div>
+                        <span class="mini-text">(223 Reviews)</span>
+                      </div>
+                      <h3 class="product-title">
+                        <a href="./single-page.html">Pink Luxury Dress, Summer Fashion</a>
+                      </h3>
+                      <div class="price">
+                        <span class="current-price" data-base="57.00">$ 57.00</span>
+                        <span class="original-price mini-text" data-base="70.00">$ 70.00</span>
+                      </div>
+                      <!-- <button class="add-to-cart" data-has-options="true">Add to Cart</button> -->
+                      <div class="product-highlights">
+                        <span>👗 Soft, chiffon fabric</span><br>
+                        <span>🌸 Elegant design</span><br>
+                        <span>💃 Flowy & light design</span><br>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item" data-id="product-id-126">
+                    <!-- data-id -->
+                    <div class="media">
+                      <div class="thumbnail object-cover">
+                        <a href="./floral-midi-dress.html">
+                          <img src="./assets/images/samsung-s25-ultra.jpg" alt="samsung galaxy s25 ulta" />
+                        </a>
+                      </div>
+                      <div class="hoverable">
+                        <ul>
+                          <li class="active"><a href="#"><i class="ri-heart-line"></i></a> </li>
+                          <li class="active"><a href="#" class="add-to-cart"><i class="ri-shopping-cart-line"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="discount flexcenter">
+                        <span>23%</span>
+                      </div>
+                    </div>
+                    <div class="product-details">
+                      <div class="rating">
+                        <div class="stars"></div>
+                        <span class="mini-text">(1,024 Reviews)</span>
+                      </div>
+                      <h3 class="product-title">
+                        <a href="./single-page.html">Samsung Galaxy S25 Ulta (256 GB)</a>
+                      </h3>
+                      <div class="price">
+                        <span class="current-price" data-base="1149.00">$ 1149.00</span>
+                        <span class="original-price mini-text" data-base="1499.00">$ 1499.00</span>
+                      </div>
+                      <!-- <button class="add-to-cart" data-has-options="true">Add to Cart</button> -->
+                      <div class="product-highlights">
+                        <span>📸 200MP AI Camera</span><br>
+                        <span>💡 Dynamic AMOLED 3X</span><br>
+                        <span>⚡ Snapdragon 8 Elite</span><br>
+                        <span>🔋 5000m Ah Battery</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item" data-id="product-id-125">
+                    <!-- data-id -->
+                    <div class="media">
+                      <div class="thumbnail object-cover">
+                        <a href="./floral-midi-dress.html">
+                          <img src="./assets/images/men-coat.jpg" alt="men coat" />
+                        </a>
+                      </div>
+                      <div class="hoverable">
+                        <ul>
+                          <li class="active"><a href="#"><i class="ri-heart-line"></i></a> </li>
+                          <li class="active"><a href="#" class="add-to-cart"><i class="ri-shopping-cart-line"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="discount flexcenter">
+                        <span>42%</span>
+                      </div>
+                    </div>
+                    <div class="product-details">
+                      <div class="rating">
+                        <div class="stars"></div>
+                        <span class="mini-text">(87 Reviews)</span>
+                      </div>
+                      <h3 class="product-title">
+                        <a href="./single-page.html">Castor Coat - Wool coats , H&M</a>
+                      </h3>
+                      <div class="price">
+                        <span class="current-price" data-base="89.00">$ 89.00</span>
+                        <span class="original-price mini-text" data-base="155.00">$ 155.00</span>
+                      </div>
+                      <!-- <button class="add-to-cart" data-has-options="false">Add to Cart</button> -->
+                      <div class="product-highlights">
+                        <span>🧥 100% Wool Material</span><br>
+                        <span>🌀 Machine Washable</span><br>
+                        <span>🔥 Warm & Insulated</span><br>
+                        <span>🌦️ All-Weather Protection</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item" data-id="product-id-129">
+                    <!-- data-id -->
+                    <div class="media">
+                      <div class="thumbnail object-cover">
+                        <a href="./floral-midi-dress.html">
+                          <img src="./assets/images/skinny-jeans-men.jpg" alt="skinny jeans men" />
+                        </a>
+                      </div>
+                      <div class="hoverable">
+                        <ul>
+                          <li class="active"><a href="#"><i class="ri-heart-line"></i></a> </li>
+                          <li class="active"><a href="#" class="add-to-cart"><i class="ri-shopping-cart-line"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="discount flexcenter">
+                        <span>43%</span>
+                      </div>
+                    </div>
+                    <div class="product-details">
+                      <div class="rating">
+                        <div class="stars"></div>
+                        <span class="mini-text">(156 Reviews)</span>
+                      </div>
+                      <h3 class="product-title">
+                        <a href="./single-page.html">Light Blue Men's Skinny Stretch Jeans</a>
+                      </h3>
+                      <div class="price">
+                        <span class="current-price" data-base="34.00">$ 34.00</span>
+                        <span class="original-price mini-text" data-base="60.00">$ 60.00</span>
+                      </div>
+                      <!-- <button class="add-to-cart" data-has-options="false">Add to Cart</button> -->
+                      <div class="product-highlights">
+                        <span>👖 Stretch denim</span><br>
+                        <span>🔥 Modern skinny fit</span><br>
+                        <span>💪 Durable & flexible</span><br>
+                        <span>🌿 Eco-friendly</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item" data-id="product-id-120">
+                    <!-- Add data-id -->
+                    <div class="media">
+                      <div class="thumbnail object-cover">
+                        <a href="./floral-midi-dress.html">
+                          <img src="./assets/images/3-seat-sofa-with-chaise-longue.jpg"
+                            alt="3 seat sofa with chaise longue, gray/black" />
+                        </a>
+                      </div>
+                      <div class="hoverable">
+                        <ul>
+                          <li class="active"><a href="#"><i class="ri-heart-line"></i></a> </li>
+                          <li class="active"><a href="#" class="add-to-cart"><i class="ri-shopping-cart-line"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="discount flexcenter">
+                        <span>15%</span>
+                      </div>
+                    </div>
+                    <div class="product-details">
+                      <div class="rating">
+                        <div class="stars"></div>
+                        <span class="mini-text">(192 Reviews)</span>
+                      </div>
+                      <h3 class="product-title">
+                        <a href="./single-page.html">3 Seat Sofa With Chaise Longue IKEA</a>
+                      </h3>
+                      <div class="price">
+                        <span class="current-price" data-base="796.00">$ 796.00</span>
+                        <span class="original-price mini-text" data-base="939.00">$ 939.00</span>
+                      </div>
+                      <!-- <button class="add-to-cart" data-has-options="false">Add to Cart</button> -->
+                      <div class="product-highlights">
+                        <span>🛋️ Roomy 3-seater + chaise</span><br>
+                        <span>🧼 Washable fabric covers</span><br>
+                        <span>🌱 Eco-friendly</span><br>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item" data-id="product-id-133">
+                    <!-- data-id -->
+                    <div class="media">
+                      <div class="thumbnail object-cover">
+                        <a href="./floral-midi-dress.html">
+                          <img src="./assets/images/samsung-galaxy-buds3-pro.jpg" alt="samsung galaxy buds3 pro" />
+                        </a>
+                      </div>
+                      <div class="hoverable">
+                        <ul>
+                          <li class="active"><a href="#"><i class="ri-heart-line"></i></a> </li>
+                          <li class="active"><a href="#" class="add-to-cart"><i class="ri-shopping-cart-line"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="discount flexcenter">
+                        <span>26%</span>
+                      </div>
+                    </div>
+                    <div class="product-details">
+                      <div class="rating">
+                        <div class="stars"></div>
+                        <span class="mini-text">(1,311 Reviews)</span>
+                      </div>
+                      <h3 class="product-title">
+                        <a href="./single-page.html">Samsung Galaxy Buds3 Pro</a>
+                      </h3>
+                      <div class="price">
+                        <span class="current-price" data-base="220.00">$ 220.00</span>
+                        <span class="original-price mini-text" data-base="299.00">$ 299.00</span>
+                      </div>
+                      <!-- <button class="add-to-cart" data-has-options="true">Add to Cart</button> -->
+                      <div class="product-highlights">
+                        <span>🔊 360° Surround Sound</span><br>
+                        <span>🎤 Noise Cancellation</span><br>
+                        <span>🤖 AI Voice Control</span><br>
+                        <span>⚡ 48-Hour Battery Life</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="banners">
+          <div class="container">
+            <div class="wrapper">
+              <div class="column">
+                <div class="banner flexwrap">
+                  <div class="row">
+                    <div class="item">
+                      <div class="product-image-link">
+                        <img src="./assets/images/garmin.jpg" alt="Garmin Vivoactive 5">
+                      </div>
+                      <div class="text-content flexcol">
+                        <h3>Insane Sale</h3>
+                        <h4><span>🚀 Get Yours Today</span><br> Garmin Vivoactive 5 42mm</h4>
+                        <a href="#" class="primary-button">Buy Now</a>
+                      </div>
+                      <a href="#" class="over-link"></a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="item banner-light">
+                      <div class="product-image-link">
+                        <img src="./assets/images/chair.jpg" alt="chair">
+                      </div>
+                      <div class="text-content flexcol">
+                        <h3>Insane Sale</h3>
+                        <h4><span>Exclusive Deals Daily</span><br>Modern Lounge Chair</h4>
+                        <a href="#" class="primary-button">Buy Now</a>
+                      </div>
+                      <a href="#" class="over-link"></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- deal-of-the-day  -->
+                <div class="deal-of-the-day flexwrap">
+                  <div class="content-wrapper">
+                    <div class="time-circle">
+                      <div class="time-segment hours">
+                        <span class="number">24</span>
+                        <span class="label">Hours</span>
+                      </div>
+                      <div class="time-segment minutes">
+                        <span class="number">59</span>
+                        <span class="label">Minutes</span>
+                      </div>
+                      <div class="discount-badge">
+                        <span>70% OFF</span>
+                      </div>
+                    </div>
+                    <div class="deal-content">
+                      <h3>Flash Sale!</h3>
+                      <h4>Daily Super Deals</h4>
+                      <p>Limited time offers on selected items. Don't miss out!</p>
+                      <a href="#" class="deal-button">Shop Now <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+
+    <footer>
+      <!-- newsletter -->
+      <div class="newsletter">
+        <div class="container">
+          <div class="wrapper">
+            <div class="box">
+              <div class="content">
+                <h3>Subscribe to our newsletter</h3>
+                <p>
+                  Receive email updates on our latest shop and
+                  <strong> special offers</strong>
+                </p>
+              </div>
+              <form action="" class="search">
+                <span class="large-icon"><i class="ri-mail-line"></i></span>
+                <input type="mail" placeholder="Email" required />
+                <button type="submit">Sign in</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- widgets -->
+      <div class="widgets">
+        <div class="container">
+          <div class="wrapper">
+            <div class="flexwrap">
+              <div class="row">
+                <div class="item mini-links">
+                  <!-- column header  -->
+                  <h4>Help & Contact</h4>
+                  <ul class="flexcol">
+                    <li><a href="#">Your Account</a></li>
+                    <li><a href="#">Your Orders</a></li>
+                    <li><a href="#">Shipping Rates</a></li>
+                    <li><a href="#">Assistant</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Contact us</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                <div class="item mini-links">
+                  <!-- column header  -->
+                  <h4>Product Categories</h4>
+                  <ul class="flexcol">
+                    <li><a href="#">Electronic</a></li>
+                    <li><a href="#">Health & Wellness</a></li>
+                    <li><a href="#">Beauty</a></li>
+                    <li><a href="#">Women's Fashion</a></li>
+                    <li><a href="#">Men's Fashion</a></li>
+                    <li><a href="#">Girl's Fashion</a></li>
+                    <li><a href="#">Boy's Fashion</a></li>
+                    <li><a href="#">Home & Kitchen</a></li>
+                    <li><a href="#">Travel & Luggage</a></li>
+                    <li><a href="#">Sports & Outdoors</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                <div class="item mini-links">
+                  <!-- column header  -->
+                  <h4>Payment Info</h4>
+                  <ul class="flexcol">
+                    <li><a href="#">Paypal</a></li>
+                    <li><a href="#">Shop with Points</a></li>
+                    <li><a href="#">Bussiness Card</a></li>
+                    <li><a href="#">Reload Your Balance</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                <div class="item mini-links">
+                  <!-- column header  -->
+                  <h4>About Us</h4>
+                  <ul class="flexcol">
+                    <li><a href="#">Company Info</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Policies</a></li>
+                    <li><a href="#">Custmer Reviews</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- socials -->
+      <div class="footer-info">
+        <div class="container">
+          <div class="wrapper">
+            <div class="flexcol">
+              <a href="#home" class="logo">
+                <div class="logo-top">e.</div>
+                <div class="logo-bottom">Shop</div>
+              </a>
+              <div class="socials">
+                <ul class="wrapperItem">
+                  <li>
+                    <a href="#"><i class="ri-twitter-line"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="ri-facebook-line"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="ri-linkedin-line"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="ri-youtube-line"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- I clarify that these rights are by way of example nothing more -->
+            <p class="mini-text">
+              Copyright 2025 © e.Shop. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- navigation buttons for responsive mode -->
+      <div class="menu-bottom desktop-hide">
+        <div class="container">
+          <div class="wrapper">
+            <nav>
+              <ul class="wrapperItem">
+                <li>
+                  <a href="index.html" class="nav-item">
+                    <i class="ri-home-5-line"></i>
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-item">
+                    <i class="ri-user-6-line"></i>
+                    <span>Account</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-item wish-trigger">
+                    <i class="ri-heart-line"></i>
+                    <span>Wishlist</span>
+                    <span class="item-number wishlist-count">0</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#0" class="nav-item search-trigger">
+                    <i class="ri-search-line"></i>
+                    <span>Search</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="cart.html" class="nav-item cart-trigger">
+                    <i class="ri-shopping-cart-line"></i>
+                    <span>Cart</span>
+                    <span class="item-number cart-count">0</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- Wishlist Panel -->
+      <div class="wish-list">
+        <div class="content">
+          <div class="wish-list-head">
+            <h3>Your Wishlist</h3>
+            <a href="#" class="t-close"><i class="ri-close-line"></i></a>
+          </div>
+          <div class="wish-list-body"></div>
+        </div>
+      </div>
+
+      <!--  Mobile search form / bottom search desktop-->
+      <div class="search-bottom desktop-hide">
+        <div class="container">
+          <div class="wrapper">
+            <form id="search-form-mobile" action="" class="search">
+              <a href="#" class="t-close search-close flexcenter">
+                <i class="ri-close-line"></i>
+              </a>
+              <span class="large-icon"><i class="ri-search-line"></i></span>
+              <input type="search" id="searchInput" placeholder="Search for a product" />
+              <button type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- overlay -->
+      <div class="overlay"></div>
+      <!-- Improved Back to Top Button -->
+      <div class="backtotop" aria-label="Back to top">
+        <a href="#top" class="flexcol smooth-scroll">
+          <i class="ri-arrow-up-line"></i>
+        </a>
+      </div>
+    </footer>
+  </div>
+  <!-- Show notification message if product is already exist or no -->
+  <div id="cartNotification" class="showCartNotification">
+    <i class="ri-shopping-cart-line"></i>
+    <span id="notificationMessage"></span>
+  </div>
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/confirmation.js"></script>
+
+</body>
+
+</html>

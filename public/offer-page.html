@@ -1,0 +1,1633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-shop</title>
+  <meta name="Author" content="Mymoon Dobaibi" />
+  <meta name="Description" content="e-commerce" />
+  <meta name="Keywords" content="e-commerce, clothes, electronic, sport, beauty" />
+  <link rel="icon" href="img/favicon.png" type="image/png" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/auth.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/2f77fa652c.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="shortcut icon" href="./assets/images_readme/logo/logoWhite.png" />
+  <!-- <link rel="stylesheet" href="./css/index.css" /> -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <div id="page" class="site single-page">
+    <aside class="site-off desktop-hide">
+      <div class="off-canvas">
+        <div class="canvas-head wrapperItem">
+          <a href="#home" class="logo">
+            <div class="logo-top">e.</div>
+            <div class="logo-bottom">Shop</div>
+          </a>
+          <a href="#" class="t-close flexcenter"><i class="ri-close-line"></i></a>
+        </div>
+        <div class="departments"></div>
+        <nav></nav>
+        <div class="thetop-nav"></div>
+      </div>
+    </aside>
+
+    <header>
+      <!-- header top -->
+      <div class="headerTop mobile-hide">
+        <div class="container">
+          <div class="wrapper wrapperItem">
+            <div class="left">
+              <ul class="wrapperItem wrapper-links">
+                <li><a href="category-page.html" class="category-filter-trigger">Categories</a></li>
+                <li><a href="offer-page.html">Offer</a></li>
+                <li><a href="#">Featured Products</a></li>
+              </ul>
+            </div>
+            <div class="right">
+              <ul class="wrapperItem">
+                <li class="wrapper-links">
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Order Tracking</a></li>
+                <li class="currency">
+                  <a href="#"><span class="currency-label">USD</span> <i class="ri-arrow-down-s-fill"></i></a>
+                <ul>
+                  <li class="current"><a href="#">USD</a></li>
+                  <li><a href="#">SEK</a></li>
+                  <li><a href="#">EURO</a></li>
+                  <li><a href="#">GBP</a></li>
+                </ul>
+              </li>
+                <li>
+                  <a href="#">English<span class="arrow-icon">
+                      <i class="ri-arrow-down-s-fill"></i></span></a>
+                  <ul>
+                    <li class="current"><a href="#">English</a></li>
+                    <li><a href="#">Swedish</a></li>
+                    <li><a href="#">Arabic</a></li>
+                  </ul>
+                </li>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- header-nav -->
+      <div class="headerNav">
+        <div class="container">
+          <div class="wrapper wrapperItem">
+            <a href="#" class="trigger desktop-hide">
+              <div class="hamburger">
+                <div class="line line-1"></div>
+                <div class="line line-2"></div>
+                <div class="line line-3"></div>
+              </div>
+            </a>
+            <div class="left wrapperItem">
+              <a href="./index.html#home" class="logo">
+                <div class="logo-top">e.</div>
+                <div class="logo-bottom">Shop</div>
+              </a>
+              <nav class="mobile-hide">
+                <ul class="wrapperItem wrapper-links">
+                  <li><a href="./index.html#home" class="active">Home</a></li>
+                  <li><a href="#">Men</a></li>
+                  <li class="has-child">
+                    <a href="#">Women
+                      <div class="arrow-icon">
+                        <div class="small-icon"><i class="ri-arrow-down-s-line"></i></div>
+                      </div>
+                    </a>
+
+                    <div class="Women-arrow">
+                      <div class="container">
+                        <div class="wrapper">
+                          <div class="row">
+                            <h3>Women's Clothing</h3>
+                            <ul>
+                              <li><a href="#">Dresses</a></li>
+                              <li><a href="#">Jeans</a></li>
+                              <li><a href="#">Pajamas</a></li>
+                              <li><a href="#">Shorts</a></li>
+                              <li><a href="#">Swimwear</a></li>
+                              <li><a href="#">Sweaters</a></li>
+                              <li><a href="#">Jackets & Coats</a></li>
+                              <li><a href="#">Pants & Capris</a></li>
+                              <li><a href="#">Tops & Blouses</a></li>
+                              <li><a href="#">Skirts</a></li>
+                              <li><a href="#">Activewear</a></li>
+                              <li><a href="#">Lingerie</a></li>
+                              <li><a href="#">Suits</a></li>
+                              <li><a href="#">Accessories</a></li>
+                              <li><a href="#">Footwear</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="wrapper">
+                          <div class="row">
+                            <h3>Jewelry</h3>
+                            <ul>
+                              <li><a href="#">Rings</a></li>
+                              <li><a href="#">Necklaces</a></li>
+                              <li><a href="#">Earrings</a></li>
+                              <li><a href="#">Bracelets</a></li>
+                              <li><a href="#">Pendants</a></li>
+                              <li><a href="#">Brooches</a></li>
+                              <li><a href="#">Anklets</a></li>
+                              <li><a href="#">Cufflinks</a></li>
+                              <li><a href="#">Charms</a></li>
+                              <li><a href="#">Watches</a></li>
+                              <li><a href="#">Sets</a></li>
+                              <li><a href="#">Body Jewelry</a></li>
+                              <li><a href="#">Jewelry Boxes</a></li>
+                              <li><a href="#">Cleaning & Care</a></li>
+                              <li><a href="#">Accessories</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="wrapper">
+                          <div class="row">
+                            <h3>Beauty</h3>
+                            <ul>
+                              <li><a href="#">Makeup & Cosmetics</a></li>
+                              <li><a href="#">Skin Care</a></li>
+                              <li><a href="#">Hair Care</a></li>
+                              <li><a href="#">Fragrances</a></li>
+                              <li><a href="#">Face Masks</a></li>
+                              <li><a href="#">Spa Kits & Gifts</a></li>
+                              <li><a href="#">Nail Care</a></li>
+                              <li><a href="#">Bath & Body</a></li>
+                              <li><a href="#">Beauty Tools</a></li>
+                              <li><a href="#">Men's Grooming</a></li>
+                              <li><a href="#">Oral Care</a></li>
+                              <li><a href="#">Sun Care</a></li>
+                              <li><a href="#">Anti-Aging</a></li>
+                              <li><a href="#">Natural & Organic</a></li>
+                              <li><a href="#">Travel Size</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="wrapper">
+                          <div class="row">
+                            <h3>Top Brands</h3>
+                            <ul class="women-brands">
+                              <li><a href="#">Nike</a></li>
+                              <li><a href="#">H&M</a></li>
+                              <li><a href="#">Gucci</a></li>
+                              <li><a href="#">Zalando</a></li>
+                              <li><a href="#">Zara</a></li>
+                              <li><a href="#">Chanel</a></li>
+                              <li><a href="#">Prada</a></li>
+                              <li><a href="#">Louis Vuitton</a></li>
+                              <li><a href="#">Adidas</a></li>
+                              <li><a href="#">Versace</a></li>
+                              <li><a href="#">Dior</a></li>
+                              <li><a href="#">Uniqlo</a></li>
+                              <li><a href="#">Levi's</a></li>
+                              <li><a href="#">Calvin Klein</a></li>
+                              <li><a href="#">IKEA</a></li>
+                              <li><a href="#">Burberry</a></li>
+                            </ul>
+                            <a href="" class="view-all-brands">View all brands <i class="ri-arrow-right-line"></i></a>
+                          </div>
+                        </div>
+                        <div class="wrapper products">
+                          <div class="row">
+                            <div class="media">
+                              <div class="img-women-arrow"><a href="#"><img src="./assets/images/most-wanted1.jpg"
+                                    alt="most wanted clothes"></a></div>
+                            </div>
+                            <div class="text-content">
+                              <h4>Most wanted</h4>
+                              <a href="#" class="primary-button">Order Now</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li><a href="#">Kids</a></li>
+                  <li><a href="#">Sport<div class="fly-item"><span>New</span></div></a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="right">
+              <ul class="icon-container">
+                <li class="mobile-hide">
+                  <a href="#" class="wish-item wish-trigger">
+                    <div class="arrow-icon"><i class="ri-heart-line"></i></div>
+                    <div class="fly-item">
+                      <span class="item-number wishlist-count">0</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="./cart.html" class="iscart">
+                    <div class="arrow-icon"><i class="ri-shopping-cart-line"></i>
+                      <div class="fly-item">
+                        <span class="item-number cart-count">0</span>
+                      </div>
+                    </div>
+                    <div class="icon-text">
+                      <div class="mini-text">Total</div>
+                      <div class="cart-total">$0.00</div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+                         
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- header main -->
+      <div class="header-main mobile-hide">
+        <div class="container">
+          <div class="wrapper wrapperItem">
+            <!-- departments list -->
+            <div class="left">
+              <div class="departments-cat">
+                <div class="departments-head">
+                  <div class="main-text">All Departments</div>
+                  <div class="mini-text mobile-hide">Total 1000 Products</div>
+                  <a href="#" class="departments-trigger mobile-hide">
+                    <div class="hamburger">
+                      <div class="line line-1"></div>
+                      <div class="line line-2"></div>
+                      <div class="line line-3"></div>
+                    </div>
+                    <i class="ri-close-line ri-xl"></i>
+                  </a>
+                </div>
+                <div class="departments-menu">
+                  <ul class="second-links">
+                    <li class="has-child electronic">
+                      <a href="departments-header">
+                        <div class="large-icon"><i class="ri-bluetooth-connect-fill"></i></div>
+                        Electronic
+                        <div class="small-icon"><i class="ri-arrow-right-s-line"></i></div>
+                      </a>
+                      <ul>
+                        <li><a href="#">Smartphones</a></li>
+                        <li><a href="#">Laptops</a></li>
+                        <li><a href="#">Cameras</a></li>
+                        <li><a href="#">Headphones</a></li>
+                        <li><a href="#">Smart Home Devices</a></li>
+                        <li><a href="#">Gaming Consoles</a></li>
+                      </ul>
+                    </li>
+                    <li class="has-child healthAndWellness">
+                      <a href="departments-header">
+                        <div class="large-icon"><i class="ri-heart-pulse-fill"></i></div>
+                        Health & Wellness
+                      </a>
+                    </li>
+                    <li class="has-child beauty">
+                      <a href="departments-header">
+                        <div class="large-icon"><i class="ri-brush-fill"></i></div>
+                        Beauty
+                        <div class="small-icon"><i class="ri-arrow-right-s-line"></i></div>
+                      </a>
+                      <ul>
+                        <li><a href="#">Makeup & Cosmetics</a></li>
+                        <li><a href="#">Skin Care</a></li>
+                        <li><a href="#">Hair Care</a></li>
+                        <li><a href="#">Fragrances</a></li>
+                        <li><a href="#">Face Masks</a></li>
+                        <li><a href="#">Spa Kits & Gifts</a></li>
+                        <li><a href="#">Nail Care</a></li>
+                        <li><a href="#">Bath & Body</a></li>
+                        <li><a href="#">Beauty Tools</a></li>
+                        <li><a href="#">Men's Grooming</a></li>
+                        <li><a href="#">Oral Care</a></li>
+                        <li><a href="#">Sun Care</a></li>
+                        <li><a href="#">Anti-Aging</a></li>
+                        <li><a href="#">Natural & Organic</a></li>
+                        <li><a href="#">Travel Size</a></li>
+                      </ul>
+                    </li>
+                    <li class="has-child womensFashion">
+                      <a href="departments-header">
+                        <div class="large-icon"><i class="ri-t-shirt-air-fill"></i></div>
+                        Women's Fashion
+                        <div class="small-icon"><i class="ri-arrow-right-s-line"></i></div>
+                      </a>
+                      <ul>
+                        <li><a href="#">Dresses</a></li>
+                        <li><a href="#">Jeans</a></li>
+                        <li><a href="#">Pajamas</a></li>
+                        <li><a href="#">Shorts</a></li>
+                        <li><a href="#">Sweaters</a></li>
+                      </ul>
+                    </li>
+                    <li class="has-child mensFashion">
+                      <a href="departments-header">
+                        <div class="large-icon"><i class="ri-shirt-fill"></i></div>
+                        Men's Fashion
+                        <div class="small-icon"><i class="ri-arrow-right-s-line"></i></div>
+                      </a>
+                      <ul>
+                        <li><a href="#">Shirts</a></li>
+                        <li><a href="#">Jeans</a></li>
+                        <li><a href="#">Suits</a></li>
+                        <li><a href="#">Trousers</a></li>
+                        <li><a href="#">Jackets & Coats</a></li>
+                      </ul>
+                    </li>
+                    <li class="has-child  girlsFashion">
+                      <a href="#">
+                        <div class="large-icon"><i class="ri-user-5-fill"></i></div>
+                        Girl's Fashion
+                      </a>
+                    </li>
+                    <li class="has-child  boysFashion">
+                      <a href="departments-header">
+                        <div class="large-icon"><i class="ri-user-6-fill"></i></div>
+                        Boy's Fashion
+                      </a>
+                    </li>
+                    <li class="has-child homeLiving" data-bg="img/menu/home_kitchen.jpg">
+                      <a href="departments-header">
+                        <div class="large-icon"><i class="ri-home-9-fill"></i></div>
+                        Home & Kitchen
+                        <div class="small-icon"><i class="ri-arrow-right-s-line"></i></div>
+                      </a>
+                      <div class="mega">
+                        <div class="flexcol">
+                          <div class="row">
+                            <h4><a href="#">Kitchen & Dining</a></h4>
+                            <ul>
+                              <li><a href="#">Cookware</a></li>
+                              <li><a href="#">Dinnerware</a></li>
+                              <li><a href="#">Kitchen Storage</a></li>
+                              <li><a href="#">Small Appliances</a></li>
+                              <li><a href="#">Bakeware</a></li>
+                            </ul>
+                          </div>
+                          <div class="row">
+                            <h4><a href="#">Living</a></h4>
+                            <ul>
+                              <li><a href="#">Furniture</a></li>
+                              <li><a href="#">Decor</a></li>
+                              <li><a href="#">Lighting</a></li>
+                              <li><a href="#">Storage Solutions</a></li>
+                              <li><a href="#">Rugs & Carpets</a></li>
+                              <li><a href="#">Wall Art</a></li>
+                              <li><a href="#">Curtains & Blinds</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="flexcol">
+                          <div class="row">
+                            <h4><a href="#">Bed & Bath</a></h4>
+                            <ul>
+                              <li><a href="#">Bed Linen</a></li>
+                              <li><a href="#">Bathroom Accessories</a></li>
+                              <li><a href="#">Pillows & Cushions</a></li>
+                              <li><a href="#">Mattresses</a></li>
+                              <li><a href="#">Towels</a></li>
+                            </ul>
+                          </div>
+                          <div class="row">
+                            <h4><a href="#">Utility</a></h4>
+                            <ul>
+                              <li><a href="#">Laundry</a></li>
+                              <li><a href="#">Garbage Bins</a></li>
+                              <li><a href="#">Cleaning Supplies</a></li>
+                              <li><a href="#">Ironing & Steamers</a></li>
+                              <li><a href="#">Storage Containers</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="flexcol">
+                          <div class="row">
+                            <h4><a href="#">Outdoor</a></h4>
+                            <ul>
+                              <li><a href="#">Patio Furniture</a></li>
+                              <li><a href="#">Garden Decor</a></li>
+                              <li><a href="#">Grills & BBQ</a></li>
+                              <li><a href="#">Outdoor Lighting</a></li>
+                              <li><a href="#">Poolhouse</a></li>
+                              <li><a href="#">Lawn Care</a></li>
+                              <li><a href="#">Outdoor Kitchen</a></li>
+                              <li><a href="#">Backyard</a></li>
+                              <li><a href="#">Fountains & Ponds</a></li>
+                              <li><a href="#">Planters & Gardening</a></li>
+                              <li><a href="#">Fire Pits</a></li>
+                              <li><a href="#">Outdoor Rugs</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="has-child travelLuggage">
+                      <a href="departments-header">
+                        <div class="large-icon"><i class="ri-suitcase-fill"></i></div>
+                        Travel & Luggage
+                        <div class="small-icon"><i class="ri-arrow-right-s-line"></i></div>
+                      </a>
+                      <ul>
+                        <li><a href="#">Carry-On Luggage</a></li>
+                        <li><a href="#">Checked Luggage</a></li>
+                        <li><a href="#">Travel Backpacks</a></li>
+                        <li><a href="#">Duffel Bags</a></li>
+                        <li><a href="#">Suitcases</a></li>
+                        <li><a href="#">Packing Organizers</a></li>
+                        <li><a href="#">Travel Accessories</a></li>
+                        <li><a href="#">Laptop Bags</a></li>
+                        <li><a href="#">Toiletry Bags</a></li>
+                        <li><a href="#">Travel Pillows & Comfort</a></li>
+                      </ul>
+                    </li>
+                    <li class="has-child portsAndOutdoors">
+                      <a href="departments-header">
+                        <div class="large-icon"><i class="ri-football-fill"></i></div>
+                        Sports & Outdoors
+                      </a>
+                    </li>
+                    <li class="has-child bestSeller">
+                      <a href="departments-header">
+                        <div class="large-icon"><i class="ri-shield-star-fill"></i></div>
+                        Best Seller
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- search bar -->
+            <div class="right">
+              <div class="search-box">
+                <form action="" class="search">
+                  <span class="large-icon"><i class="ri-search-line"></i></span>
+                  <input type="search" placeholder="Search for a product" />
+                  <button type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="single-product">
+        <div class="container">
+          <div class="wrapper">
+            <div class="breadcrumb">
+              <ul class="wrapperItem">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shoes</a></li>
+                <li>Proof of Perfection Floral Tiered Midi Dress</li>
+              </ul>
+            </div>
+            <div class="column">
+              <div class="products one">
+                <div class="flexwrap">
+                  <div class="row">
+                    <div class="item sticky">
+                      <div class="price">
+                        <span class="discount">21%<br>OFF</span>
+                      </div>
+                      <div class="big-image">
+                        <div class="big-image-wrapper swiper-wrapper">
+                          <div class="image-show swiper-slide">
+                            <a data-fslightbox="gallery" href="./assets/images/most-wanted1.jpg">
+                              <img src="./assets/images/most-wanted1.jpg" alt="Midi Dress 1">
+                            </a>
+                          </div>
+                          <div class="image-show swiper-slide">
+                            <a data-fslightbox="gallery" href="./assets/images/most-wanted2.jpg">
+                              <img src="./assets/images/most-wanted2.jpg" alt="Midi Dress 2">
+                            </a>
+                          </div>
+                          <div class="image-show swiper-slide">
+                            <a data-fslightbox="gallery" href="./assets/images/most-wanted3.jpg">
+                              <img src="./assets/images/most-wanted3.jpg" alt="Midi Dress 3">
+                            </a>
+                          </div>
+                        </div>
+
+                        <!-- Pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- Navigation Arrows -->
+                        <div class="swiper-button-prev">
+                          <i class="fa-solid fa-chevron-left"></i>
+                        </div>
+                        <div class="swiper-button-next">
+                          <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                      </div>
+
+                      <!-- Thumbnail Images -->
+                      <div class="small-image">
+                        <ul class="small-image-wrapper wrapperItem swiper-wrapper">
+                          <li class="thumbnail-show swiper-slide">
+                            <img src="./assets/images/most-wanted1.jpg" alt="Midi Dress 1">
+                          </li>
+                          <li class="thumbnail-show swiper-slide">
+                            <img src="./assets/images/most-wanted2.jpg" alt="Midi Dress 2">
+                          </li>
+                          <li class="thumbnail-show swiper-slide">
+                            <img src="./assets/images/most-wanted3.jpg" alt="Midi Dress 3">
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="item">
+                      <h1>Elegant Floral Midi Dress</h1>
+                      <div class="roduct-details">
+                        <div class="rating">
+                          <div class="stars"></div>
+                          <a href="#" class="mini-text">1,449 reviews</a>
+                          <a href="" class="add-review mini-text">Add Your Review</a>
+                        </div>
+                        <div class="stock-yrt">
+                          <span class="available">In Stock</span>
+                          <span class="yrt mini-text">YRT-456</span>
+                        </div>
+                        <div class="price">
+                          <span class="current-price" data-base="79.00">$79.00</span>
+                          <span class="original-price mini-text" data-base="115.00">$115.00</span>
+                        </div>
+                        <!-- <div class="color-options">
+                            <span class="option-label">Colors:</span>
+                            <div class="variant">
+                                <form action="">
+                                  <p>
+                                    <input type="radio" name="color" id="cored">
+                                    <label for="cored" class="circle"></label>
+                                  </p>
+                                  <p>
+                                    <input type="radio" name="color" id="coblue">
+                                    <label for="coblue" class="circle"></label>
+                                  </p>
+                                  <p>
+                                    <input type="radio" name="color" id="cogray">
+                                    <label for="cogray" class="circle"></label>
+                                  </p>
+                                </form>
+                            </div>
+                          </div> -->
+                        <div class="inventory-info mini-text">
+                          <div class="qty-info">
+                            <span>Left: <strong class="qty-available">144</strong></span>
+                            <span>Sold: <strong class="qty-sold">1530</strong></span>
+                          </div>
+                          <div class="bar">
+                            <div class="available"></div>
+                          </div>
+                        </div>
+                        <!-- Timer 1 -->
+                        <div class="offer-container" data-duration="345600">
+                          <!-- 2 days -->
+                          <div class="offer-expiry">Offer expires in</div>
+                          <div class="offer">
+                            <ul>
+                              <li class="offer-days">00</li>
+                              <li class="offer-hours">00</li>
+                              <li class="offer-minutes">00</li>
+                              <li class="offer-seconds">00</li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <!-- Special Offers Section -->
+                        <div class="special-offers">
+                          <div class="offer-banner flash-offer">
+                            <i class="ri-flashlight-line"></i>
+                            <div>
+                              <p class="offer-text">Limited Time Offer: Get an extra <strong>20% OFF</strong> with
+                                code
+                                <span class="offer-code">FLASH10</span> !
+                              </p>
+                            </div>
+                          </div>
+
+                          <!-- Shipping Offer -->
+                          <div class="offer-banner shipping-offer">
+                            <i class="ri-truck-line"></i>
+                            <span>Free Shipping on Orders Over $100</span>
+                          </div>
+
+                          <!-- Return Policy -->
+                          <div class="offer-banner return-offer">
+                            <i class="ri-arrow-go-back-line"></i>
+                            <span>Easy 30-Day Returns · Free Size Exchanges</span>
+                          </div>
+                        </div>
+                        <div class="size-selector">
+                          <span class="option-label">Size:</span>
+                          <div class="variant">
+                            <form action="">
+                              <p>
+                                <input type="radio" name="size" id="size-40">
+                                <label for="size-40" class="circle"><span>40</span></label>
+                              </p>
+                              <p>
+                                <input type="radio" name="size" id="size-41">
+                                <label for="size-41" class="circle"><span>41</span></label>
+                              </p>
+                              <p>
+                                <input type="radio" name="size" id="size-42">
+                                <label for="size-42" class="circle"><span>42</span></label>
+                              </p>
+                              <p>
+                                <input type="radio" name="size" id="size-43">
+                                <label for="size-43" class="circle"><span>43</span></label>
+                              </p>
+                            </form>
+                          </div>
+                        </div>
+                        <div class="actions">
+                          <div class="qty-control wrapperItem">
+                            <button class="minus circle">-</button>
+                            <input type="text" value="1">
+                            <button class="plus circle">+</button>
+                          </div>
+                          <div class="button-cart"><button class="primary-button">Add to cart</button></div><br>
+                          <div class="wish-share">
+                            <ul class="wrapperItem second-links">
+                              <li><a href="#">
+                                  <span class="large-icon"><i class="ri-heart-line"></i></span>
+                                  <span>Favorites</span>
+                                </a></li>
+                              <li><a href="#">
+                                  <span class="large-icon"><i class="ri-share-line"></i></span>
+                                  <span>Share</span>
+                                </a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="description collapse">
+                        <ul>
+                          <li class="has-child expand">
+                            <a href="#0" class="small-icon">Information</a>
+                            <ul class="product-details">
+                              <li><span>Brand</span> <span>Reebok</span></li>
+                              <li><span>Category</span> <span>Men's Running Shoes</span></li>
+                              <li><span>Material</span> <span>Breathable Mesh, Rubber Sole</span></li>
+                              <li><span>Gender</span> <span>Men</span></li>
+                            </ul>
+                          </li>
+                          <li class="has-child">
+                            <a href="#0" class="small-icon">Description</a>
+                            <div class="product-details">
+                              <p>These men's athletic running shoes are perfect for casual walking, sports, jogging,
+                                tennis, and gym workouts.
+                                Made with breathable materials and a durable rubber sole for maximum comfort and grip.
+                              </p>
+                            </div>
+                          </li>
+                          <li class="has-child">
+                            <a href="#0" class="small-icon">Size Chart</a>
+                            <div class="product-details">
+                              <table>
+                                <thead>
+                                  <tr>
+                                    <th>Size</th>
+                                    <th>Bust (cm)</th>
+                                    <th>Waist (cm)</th>
+                                    <th>Hip (cm)</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>XS</td>
+                                    <td>82.5</td>
+                                    <td>62</td>
+                                    <td>87.5</td>
+                                  </tr>
+                                  <tr>
+                                    <td>S</td>
+                                    <td>85</td>
+                                    <td>63.5</td>
+                                    <td>89</td>
+                                  </tr>
+                                  <tr>
+                                    <td>M</td>
+                                    <td>87.5</td>
+                                    <td>67.5</td>
+                                    <td>93</td>
+                                  </tr>
+                                  <tr>
+                                    <td>L</td>
+                                    <td>90</td>
+                                    <td>72.5</td>
+                                    <td>98</td>
+                                  </tr>
+                                  <tr>
+                                    <td>XL</td>
+                                    <td>93</td>
+                                    <td>77.5</td>
+                                    <td>103</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </li>
+                          <li class="has-child expand">
+                            <a href="#" class="small-icon">Reviews<span class="mini-text">1.2k</span></a>
+                            <div class="product-details">
+                              <div class="reviews">
+                                <h4>Customer Reviews</h4>
+                                <div class="review-block">
+                                  <div class="review-block-head">
+                                    <div class="wrapperItem">
+                                      <span class="rate-sum">4.7</span>
+                                      <span class="rate-sum">1,300 Reviews</span>
+                                    </div>
+                                    <a href="#review-form" class="secondary-button">Write your review
+                                    </a>
+                                  </div>
+                                  <div class="review-block-body">
+                                    <ul>
+                                      <li class="item">
+                                        <div class="review-form">
+                                          <p class="person">Review by Adam</p>
+                                          <p class="mini-text">on 14/06/2024</p>
+                                        </div>
+                                        <div class="review-rating rating">
+                                          <div class="stars"></div>
+                                        </div>
+                                        <div class="review-title">
+                                          <p>Great price</p>
+                                        </div>
+                                        <div class="review-text">
+                                          <p>Lorem ipsum dolor sit amet
+                                            consectetur adipisicing
+                                            elit. Nobis asperiores
+                                            deserunt, ab fuga est
+                                            molestiae consequuntur.</p>
+                                        </div>
+                                      </li>
+                                      <li class="item">
+                                        <div class="review-form">
+                                          <p class="person">Review by Adam</p>
+                                          <p class="mini-text">on 14/06/2024</p>
+                                        </div>
+                                        <div class="review-rating rating">
+                                          <div class="stars"></div>
+                                        </div>
+                                        <div class="review-title">
+                                          <p>Awesome Product</p>
+                                        </div>
+                                        <div class="review-text">
+                                          <p>Lorem ipsum dolor sit amet
+                                            consectetur adipisicing
+                                            elit. Nobis asperiores
+                                            deserunt, ab fuga est
+                                            molestiae consequuntur.</p>
+                                        </div>
+                                      </li>
+
+                                    </ul>
+                                    <div class="second-links">
+                                      <a href="#" class="view-all">See all reviews<i
+                                          class="ri-arrow-right-line"></i></a>
+                                    </div>
+                                  </div>
+                                  <div id="review-rorm" class="review-form">
+                                    <h4>Write a review</h4>
+                                    <div class="rating">
+                                      <p>How satisfied are you with this product?</p>
+                                      <div class="rate-this">
+                                        <input type="radio" name='rating' id="star5">
+                                        <label for="star5"><i class="ri-star-fill"></i></label>
+
+                                        <input type="radio" name='rating' id="star4">
+                                        <label for="star4"><i class="ri-star-fill"></i></label>
+
+                                        <input type="radio" name='rating' id="star3">
+                                        <label for="star3"><i class="ri-star-fill"></i></label>
+
+                                        <input type="radio" name='rating' id="star2">
+                                        <label for="star2"><i class="ri-star-fill"></i></label>
+
+                                        <input type="radio" name='rating' id="star1">
+                                        <label for="star1"><i class="ri-star-fill"></i></label>
+                                      </div>
+                                    </div>
+                                    <form action="">
+                                      <p>
+                                        <label>Name</label>
+                                        <input type="text">
+                                      </p>
+                                      <p>
+                                        <label>Summary</label>
+                                        <input type="text">
+                                      </p>
+                                      <p>
+                                        <label>Review</label>
+                                        <textarea cols="30" rows="10"></textarea>
+                                      </p>
+                                      <p>
+                                        <a href="#" class="primary-button">Submit review
+                                        </a>
+                                      </p>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- features this section copy from home page index.html -->
+
+      <div class="related-products">
+        <div class="container">
+          <div class="wrapper">
+            <div class="sectionFeatures wrapperItem">
+              <h2>
+                <span>Related Products</span>
+              </h2>
+              <div class="second-links">
+                <a href="./tienda.html" class="view-all">Show all<i class="ri-arrow-right-line"></i></a>
+              </div>
+            </div>
+            <div class="column">
+              <div class="products main flexwrap">
+                <div class="item" data-id="product-id-123"> <!-- Add data-id -->
+                  <div class="media">
+                    <div class="thumbnail object-cover">
+                      <a href="./floral-midi-dress.html">
+                        <img src="./assets/images/most-wanted1.jpg" alt="Elegant Floral Midi Dress" />
+                      </a>
+                    </div>
+                    <div class="hoverable">
+                      <ul>
+                        <li class="active"><a href="#"><i class="ri-heart-line"></i></a> </li>
+                        <li class="active"><a href="#" class="add-to-cart"><i class="ri-shopping-cart-line"></i></a></li>
+                      </ul>
+                    </div>
+                    <div class="discount flexcenter">
+                      <span>21%</span>
+                    </div>
+                  </div>
+                  <div class="product-details">
+                    <!-- Timer 2 -->
+                    <div class="offer-container" data-duration="345600">
+                      <!-- 4 days -->
+                      <div class="offer-expiry">Offer expires in</div>
+                      <div class="offer">
+                        <ul>
+                          <li class="offer-days">00</li>
+                          <li class="offer-hours">00</li>
+                          <li class="offer-minutes">00</li>
+                          <li class="offer-seconds">00</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="rating">
+                      <div class="stars"></div>
+                      <span class="mini-text">(1,404)</span>
+                    </div>
+                    <h3 class="product-title">
+                      <a href="./detalle-libro.html">Elegant Floral Midi Dress</a>
+                    </h3>
+                    <div class="price">
+                      <span class="current-price" data-base="59.00">$59.00</span>
+                      <span class="original-price mini-text" data-base="75.00">$75.00</span>
+                    </div>
+                    <div class="inventory-info mini-text">
+                      <div class="qty-info">
+                        <span>Left: <strong class="qty-available">144</strong></span>
+                        <span>Sold: <strong class="qty-sold">1530</strong></span>
+                      </div>
+                      <div class="bar">
+                        <div class="available"></div>
+                      </div>
+                    </div>
+                    <div class="product-highlights">
+                      <span>🌺 Light weight</span><br>
+                      <span>🎀 Adjustable waist belt</span><br>
+                      <span>💃 Casual & formal</span><br>
+                      <span>👗 Multi-color options</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item" data-id="product-id-124"> <!-- Add data-id here -->
+                  <div class="media">
+                    <div class="thumbnail object-cover">
+                      <a href="./floral-midi-dress.html">
+                        <img src="./assets/images/new-mens-shoes.jpg" alt="new mens shoes" />
+                      </a>
+                    </div>
+                    <div class="hoverable">
+                      <ul>
+                        <li class="active"><a href="#"><i class="ri-heart-line"></i></a> </li>
+                        <li class="active"><a href="#" class="add-to-cart"><i class="ri-shopping-cart-line"></i></a></li>
+                      </ul>
+                    </div>
+                    <div class="discount flexcenter">
+                      <span>17%</span>
+                    </div>
+                  </div>
+                  <div class="product-details">
+                    <!-- Timer 3 -->
+                    <div class="offer-container" data-duration="172800">
+                      <!-- 2 days -->
+                      <div class="offer-expiry">Offer expires in</div>
+                      <div class="offer">
+                        <ul>
+                          <li class="offer-days">00</li>
+                          <li class="offer-hours">00</li>
+                          <li class="offer-minutes">00</li>
+                          <li class="offer-seconds">00</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="rating">
+                      <div class="stars"></div>
+                      <span class="mini-text">(364)</span>
+                    </div>
+                    <h3 class="product-title">
+                      <a href="./detalle-libro.html">New Mens Sports Running Casual Shoes</a>
+                    </h3>
+                    <div class="price">
+                      <span class="current-price" data-base="58.00">$58.00</span>
+                      <span class="original-price mini-text" data-base="74.00">$74.00</span>
+                    </div>
+                    <div class="inventory-info mini-text">
+                      <div class="qty-info">
+                        <span>Left: <strong class="qty-available">198</strong></span>
+                        <span>Sold: <strong class="qty-sold">1030</strong></span>
+                      </div>
+                      <div class="bar">
+                        <div class="available"></div>
+                      </div>
+                    </div>
+                    <div class="product-highlights">
+                      <span>👟 Light weight</span><br>
+                      <span>💨 Soft Sole</span><br>
+                      <span>🌧️ Water-resistant</span><br>
+                      <span>🏃 Non-slip for stability</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item" data-id="product-id-128"> <!-- Add data-id here -->
+                  <div class="media">
+                    <div class="thumbnail object-cover">
+                      <a href="./floral-midi-dress.html">
+                        <img src="./assets/images/pink-dress-summer-fashion.jpg" alt="pink dress summer fashion" />
+                      </a>
+                    </div>
+                    <div class="hoverable">
+                      <ul>
+                        <li class="active"><a href="#"><i class="ri-heart-line"></i></a> </li>
+                        <li class="active"><a href="#" class="add-to-cart"><i class="ri-shopping-cart-line"></i></a></li>
+                      </ul>
+                    </div>
+                    <div class="discount flexcenter">
+                      <span>18%</span>
+                    </div>
+                  </div>
+                  <div class="product-details">
+                    <!-- Timer 4 -->
+                    <div class="offer-container" data-duration="345600">
+                      <!-- 4 days -->
+                      <div class="offer-expiry">Offer expires in</div>
+                      <div class="offer">
+                        <ul>
+                          <li class="offer-days">00</li>
+                          <li class="offer-hours">00</li>
+                          <li class="offer-minutes">00</li>
+                          <li class="offer-seconds">00</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="rating">
+                      <div class="stars"></div>
+                      <span class="mini-text">(223)</span>
+                    </div>
+                    <h3 class="product-title">
+                      <a href="./detalle-libro.html">Pink Luxury Dress, Summer Fashion</a>
+                    </h3>
+                    <div class="price">
+                      <span class="current-price" data-base="57.00">$57.00</span>
+                      <span class="original-price mini-text" data-base="70.00">$70.00</span>
+                    </div>
+                    <div class="inventory-info mini-text">
+                      <div class="qty-info">
+                        <span>Left: <strong class="qty-available">344</strong></span>
+                        <span>Sold: <strong class="qty-sold">230</strong></span>
+                      </div>
+                      <div class="bar">
+                        <div class="available"></div>
+                      </div>
+                    </div>
+                    <div class="product-highlights">
+                      <span>👗 Soft, chiffon fabric</span><br>
+                      <span>🌸 Elegant design</span><br>
+                      <span>💃 Flowy & light design</span><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="item" data-id="product-id-126"> <!-- Add data-id here -->
+                  <div class="media">
+                    <div class="thumbnail object-cover">
+                      <a href="./floral-midi-dress.html">
+                        <img src="./assets/images/samsung-s25-ultra.jpg" alt="samsung galaxy s25 ulta" />
+                      </a>
+                    </div>
+                    <div class="hoverable">
+                      <ul>
+                        <li class="active"><a href="#"><i class="ri-heart-line"></i></a> </li>
+                        <li class="active"><a href="#" class="add-to-cart"><i class="ri-shopping-cart-line"></i></a></li>
+                      </ul>
+                    </div>
+                    <div class="discount flexcenter">
+                      <span>23%</span>
+                    </div>
+                  </div>
+                  <div class="product-details">
+                    <!-- Timer 5 -->
+                    <div class="offer-container" data-duration="172800">
+                      <!-- 2 days -->
+                      <div class="offer-expiry">Offer expires in</div>
+                      <div class="offer">
+                        <ul>
+                          <li class="offer-days">00</li>
+                          <li class="offer-hours">00</li>
+                          <li class="offer-minutes">00</li>
+                          <li class="offer-seconds">00</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="rating">
+                      <div class="stars"></div>
+                      <span class="mini-text">(1,024)</span>
+                    </div>
+                    <h3 class="product-title">
+                      <a href="./detalle-libro.html">Samsung Galaxy S25 Ulta (256 GB)</a>
+                    </h3>
+                    <div class="price">
+                      <span class="current-price" data-base="1149.00">$1149.00</span>
+                      <span class="original-price mini-text" data-base="1499.00">$1499.00</span>
+                    </div>
+                    <div class="inventory-info mini-text">
+                      <div class="qty-info">
+                        <span>Left: <strong class="qty-available">244</strong></span>
+                        <span>Sold: <strong class="qty-sold">1230</strong></span>
+                      </div>
+                      <div class="bar">
+                        <div class="available"></div>
+                      </div>
+                    </div>
+                    <div class="product-highlights">
+                      <span>📸 200MP AI Camera</span><br>
+                      <span>💡 Dynamic AMOLED 3X</span><br>
+                      <span>⚡ Snapdragon 8 Elite</span><br>
+                      <span>🔋 5000m Ah Battery</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item" data-id="product-id-125"> <!-- Add data-id here -->
+                  <div class="media">
+                    <div class="thumbnail object-cover">
+                      <a href="./floral-midi-dress.html">
+                        <img src="./assets/images/men-coat.jpg" alt="men coat" />
+                      </a>
+                    </div>
+                    <div class="hoverable">
+                      <ul>
+                        <li class="active"><a href="#"><i class="ri-heart-line"></i></a> </li>
+                        <li class="active"><a href="#" class="add-to-cart"><i class="ri-shopping-cart-line"></i></a></li>
+                      </ul>
+                    </div>
+                    <div class="discount flexcenter">
+                      <span>42%</span>
+                    </div>
+                  </div>
+                  <div class="product-details">
+                    <!-- Timer 6 -->
+                    <div class="offer-container" data-duration="345600">
+                      <!-- 4 days -->
+                      <div class="offer-expiry">Offer expires in</div>
+                      <div class="offer">
+                        <ul>
+                          <li class="offer-days">00</li>
+                          <li class="offer-hours">00</li>
+                          <li class="offer-minutes">00</li>
+                          <li class="offer-seconds">00</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="rating">
+                      <div class="stars"></div>
+                      <span class="mini-text">(87)</span>
+                    </div>
+                    <h3 class="product-title">
+                      <a href="./detalle-libro.html">Castor Coat - Wool coats , H&M</a>
+                    </h3>
+                    <div class="price">
+                      <span class="current-price" data-base="89.00">$89.00</span>
+                      <span class="original-price mini-text" data-base="155.00">$155.00</span>
+                    </div>
+                    <div class="inventory-info mini-text">
+                      <div class="qty-info">
+                        <span>Left: <strong class="qty-available">65</strong></span>
+                        <span>Sold: <strong class="qty-sold">130</strong></span>
+                      </div>
+                      <div class="bar">
+                        <div class="available"></div>
+                      </div>
+                    </div>
+                    <div class="product-highlights">
+                      <span>🧥 100% Wool Material</span><br>
+                      <span>🌀 Machine Washable</span><br>
+                      <span>🔥 Warm & Insulated</span><br>
+                      <span>🌦️ All-Weather Protection</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item" data-id="product-id-129"> <!-- Add data-id here -->
+                  <div class="media">
+                    <div class="thumbnail object-cover">
+                      <a href="./floral-midi-dress.html">
+                        <img src="./assets/images/skinny-jeans-men.jpg" alt="skinny jeans men" />
+                      </a>
+                    </div>
+                    <div class="hoverable">
+                      <ul>
+                        <li class="active"><a href="#"><i class="ri-heart-line"></i></a> </li>
+                        <li class="active"><a href="#" class="add-to-cart"><i class="ri-shopping-cart-line"></i></a></li>
+                      </ul>
+                    </div>
+                    <div class="discount flexcenter">
+                      <span>43%</span>
+                    </div>
+                  </div>
+                  <div class="product-details">
+                    <!-- Timer 7 -->
+                    <div class="offer-container" data-duration="172800">
+                      <!-- 2 days -->
+                      <div class="offer-expiry">Offer expires in</div>
+                      <div class="offer">
+                        <ul>
+                          <li class="offer-days">00</li>
+                          <li class="offer-hours">00</li>
+                          <li class="offer-minutes">00</li>
+                          <li class="offer-seconds">00</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="rating">
+                      <div class="stars"></div>
+                      <span class="mini-text">(156)</span>
+                    </div>
+                    <h3 class="product-title">
+                      <a href="./detalle-libro.html">Light Blue Men's Skinny Stretch Jeans</a>
+                    </h3>
+                    <div class="price">
+                      <span class="current-price" data-base="34.00">$34.00</span>
+                      <span class="original-price mini-text" data-base="60.00">$60.00</span>
+                    </div>
+                    <div class="inventory-info mini-text">
+                      <div class="qty-info">
+                        <span>Left: <strong class="qty-available">34</strong></span>
+                        <span>Sold: <strong class="qty-sold">230</strong></span>
+                      </div>
+                      <div class="bar">
+                        <div class="available"></div>
+                      </div>
+                    </div>
+                    <div class="product-highlights">
+                      <span>👖 Stretch denim</span><br>
+                      <span>🔥 Modern skinny fit</span><br>
+                      <span>💪 Durable & flexible</span><br>
+                      <span>🌿 Eco-friendly</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="item" data-id="product-id-120"> <!-- Add data-id -->
+                  <div class="media">
+                    <div class="thumbnail object-cover">
+                      <a href="./floral-midi-dress.html">
+                        <img src="./assets/images/3-seat-sofa-with-chaise-longue.jpg"
+                          alt="3 seat sofa with chaise longue, gray/black" />
+                      </a>
+                    </div>
+                    <div class="hoverable">
+                      <ul>
+                        <li class="active"><a href="#"><i class="ri-heart-line"></i></a> </li>
+                        <li class="active"><a href="#" class="add-to-cart"><i class="ri-shopping-cart-line"></i></a></li>
+                      </ul>
+                    </div>
+                    <div class="discount flexcenter">
+                      <span>15%</span>
+                    </div>
+                  </div>
+                  <div class="product-details">
+                    <!-- Timer 8 -->
+                    <div class="offer-container" data-duration="345600">
+                      <!-- 4 days -->
+                      <div class="offer-expiry">Offer expires in</div>
+                      <div class="offer">
+                        <ul>
+                          <li class="offer-days">00</li>
+                          <li class="offer-hours">00</li>
+                          <li class="offer-minutes">00</li>
+                          <li class="offer-seconds">00</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="rating">
+                      <div class="stars"></div>
+                      <span class="mini-text">(492)</span>
+                    </div>
+                    <h3 class="product-title">
+                      <a href="./detalle-libro.html">3 Seat Sofa With Chaise Longue IKEA</a>
+                    </h3>
+                    <div class="price">
+                      <span class="current-price" data-base="796.00">$796.00</span>
+                      <span class="original-price mini-text" data-base="939.00">$939.00</span>
+                    </div>
+                    <div class="inventory-info mini-text">
+                      <div class="qty-info">
+                        <span>Left: <strong class="qty-available">33</strong></span>
+                        <span>Sold: <strong class="qty-sold">530</strong></span>
+                      </div>
+                      <div class="bar">
+                        <div class="available"></div>
+                      </div>
+                    </div>
+                    <div class="product-highlights">
+                      <span>🛋️ Roomy 3-seater + chaise</span><br>
+                      <span>🧼 Washable fabric covers</span><br>
+                      <span>🌱 Eco-friendly</span><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="item" data-id="product-id-133"> <!-- Add data-id -->
+                  <div class="media">
+                    <div class="thumbnail object-cover">
+                      <a href="./floral-midi-dress.html">
+                        <img src="./assets/images/samsung-galaxy-buds3-pro.jpg" alt="samsung galaxy buds3 pro" />
+                      </a>
+                    </div>
+                    <div class="hoverable">
+                      <ul>
+                        <li class="active"><a href="#"><i class="ri-heart-line"></i></a> </li>
+                        <li class="active"><a href="#" class="add-to-cart"><i class="ri-shopping-cart-line"></i></a></li>
+                      </ul>
+                    </div>
+                    <div class="discount flexcenter">
+                      <span>26%</span>
+                    </div>
+                  </div>
+                  <div class="product-details">
+                    <!-- Timer 9 -->
+                    <div class="offer-container" data-duration="172800">
+                      <!-- 2 days -->
+                      <div class="offer-expiry">Offer expires in</div>
+                      <div class="offer">
+                        <ul>
+                          <li class="offer-days">00</li>
+                          <li class="offer-hours">00</li>
+                          <li class="offer-minutes">00</li>
+                          <li class="offer-seconds">00</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="rating">
+                      <div class="stars"></div>
+                      <span class="mini-text">(1,311)</span>
+                    </div>
+                    <h3 class="product-title">
+                      <a href="./detalle-libro.html">Samsung Galaxy Buds3 Pro</a>
+                    </h3>
+                    <div class="price">
+                      <span class="current-price" data-base="220.00">$220.00</span>
+                      <span class="original-price mini-text" data-base="299.00">$299.00</span>
+                    </div>
+                    <div class="inventory-info mini-text">
+                      <div class="qty-info">
+                        <span>Left: <strong class="qty-available">323</strong></span>
+                        <span>Sold: <strong class="qty-sold">1530</strong></span>
+                      </div>
+                      <div class="bar">
+                        <div class="available"></div>
+                      </div>
+                    </div>
+                    <div class="product-highlights">
+                      <span>🔊 360° Surround Sound</span><br>
+                      <span>🎤 Noise Cancellation</span><br>
+                      <span>🤖 AI Voice Control</span><br>
+                      <span>⚡ 48-Hour Battery Life</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banners">
+        <div class="container">
+          <div class="wrapper">
+            <div class="column">
+              <div class="banner flexwrap">
+                <div class="row">
+                  <div class="item">
+                    <div class="product-image-link">
+                      <img src="./assets/images/garmin.jpg" alt="Garmin Vivoactive 5">
+                    </div>
+                    <div class="text-content flexcol">
+                      <h3>Insane Sale</h3>
+                      <h4><span>🚀 Get Yours Today</span><br> Garmin Vivoactive 5 42mm</h4>
+                      <a href="#" class="primary-button">Buy Now</a>
+                    </div>
+                    <a href="#" class="over-link"></a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="item banner-light">
+                    <div class="product-image-link">
+                      <img src="./assets/images/chair.jpg" alt="chair">
+                    </div>
+                    <div class="text-content flexcol">
+                      <h3>Insane Sale</h3>
+                      <h4><span>Exclusive Deals Daily</span><br>Modern Lounge Chair</h4>
+                      <a href="#" class="primary-button">Buy Now</a>
+                    </div>
+                    <a href="#" class="over-link"></a>
+                  </div>
+                </div>
+              </div>
+              <!-- deal-of-the-day  -->
+              <div class="deal-of-the-day flexwrap">
+                <div class="content-wrapper">
+                  <div class="time-circle">
+                    <div class="time-segment hours">
+                      <span class="number">24</span>
+                      <span class="label">Hours</span>
+                    </div>
+                    <div class="time-segment minutes">
+                      <span class="number">59</span>
+                      <span class="label">Minutes</span>
+                    </div>
+                    <div class="discount-badge">
+                      <span>70% OFF</span>
+                    </div>
+                  </div>
+                  <div class="deal-content">
+                    <h3>Flash Sale!</h3>
+                    <h4>Daily Super Deals</h4>
+                    <p>Limited time offers on selected items. Don't miss out!</p>
+                    <a href="#" class="deal-button">Shop Now <i class="ri-arrow-right-line"></i></a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <!-- newsletter -->
+      <div class="newsletter">
+        <div class="container">
+          <div class="wrapper">
+            <div class="box">
+              <div class="content">
+                <h3>Subscribe to our newsletter</h3>
+                <p>
+                  Receive email updates on our latest shop and
+                  <strong> special offers</strong>
+                </p>
+              </div>
+              <form action="" class="search">
+                <span class="large-icon"><i class="ri-mail-line"></i></span>
+                <input type="mail" placeholder="Email" required />
+                <button type="submit">Sign in</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- widgets -->
+      <div class="widgets">
+        <div class="container">
+          <div class="wrapper">
+            <div class="flexwrap">
+              <div class="row">
+                <div class="item mini-links">
+                  <!-- column header  -->
+                  <h4>Help & Contact</h4>
+                  <ul class="flexcol">
+                    <li><a href="#">Your Account</a></li>
+                    <li><a href="#">Your Orders</a></li>
+                    <li><a href="#">Shipping Rates</a></li>
+                    <li><a href="#">Assistant</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Contact us</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                <div class="item mini-links">
+                  <!-- column header  -->
+                  <h4>Product Categories</h4>
+                  <ul class="flexcol">
+                    <li><a href="#">Electronic</a></li>
+                    <li><a href="#">Health & Wellness</a></li>
+                    <li><a href="#">Beauty</a></li>
+                    <li><a href="#">Women's Fashion</a></li>
+                    <li><a href="#">Men's Fashion</a></li>
+                    <li><a href="#">Girl's Fashion</a></li>
+                    <li><a href="#">Boy's Fashion</a></li>
+                    <li><a href="#">Home & Kitchen</a></li>
+                    <li><a href="#">Travel & Luggage</a></li>
+                    <li><a href="#">Sports & Outdoors</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                <div class="item mini-links">
+                  <!-- column header  -->
+                  <h4>Payment Info</h4>
+                  <ul class="flexcol">
+                    <li><a href="#">Paypal</a></li>
+                    <li><a href="#">Shop with Points</a></li>
+                    <li><a href="#">Bussiness Card</a></li>
+                    <li><a href="#">Reload Your Balance</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row">
+                <div class="item mini-links">
+                  <!-- column header  -->
+                  <h4>About Us</h4>
+                  <ul class="flexcol">
+                    <li><a href="#">Company Info</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Policies</a></li>
+                    <li><a href="#">Custmer Reviews</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- socials -->
+      <div class="footer-info">
+        <div class="container">
+          <div class="wrapper">
+            <div class="flexcol">
+              <a href="#home" class="logo">
+                <div class="logo-top">e.</div>
+                <div class="logo-bottom">Shop</div>
+              </a>
+              <div class="socials">
+                <ul class="wrapperItem">
+                  <li>
+                    <a href="#"><i class="ri-twitter-line"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="ri-facebook-line"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="ri-linkedin-line"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="ri-youtube-line"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- I clarify that these rights are by way of example nothing more -->
+            <p class="mini-text">
+              Copyright 2025 © e.Shop. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- navigation buttons for responsive mode -->
+      <div class="menu-bottom desktop-hide">
+        <div class="container">
+          <div class="wrapper">
+            <nav>
+              <ul class="wrapperItem">
+                <li>
+                  <a href="index.html" class="nav-item">
+                    <i class="ri-home-5-line"></i>
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-item">
+                    <i class="ri-user-6-line"></i>
+                    <span>Account</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-item wish-trigger">
+                    <i class="ri-heart-line"></i>
+                    <span>Wishlist</span>
+                    <span class="item-number wishlist-count">0</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#0" class="nav-item search-trigger">
+                    <i class="ri-search-line"></i>
+                    <span>Search</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="cart.html" class="nav-item cart-trigger">
+                    <i class="ri-shopping-cart-line"></i>
+                    <span>Cart</span>
+                    <span class="item-number cart-count">0</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- Wishlist Panel -->
+      <div class="wish-list">
+        <div class="content">
+          <div class="wish-list-head">
+            <h3>Your Wishlist</h3>
+            <a href="#" class="t-close"><i class="ri-close-line"></i></a>
+          </div>
+          <div class="wish-list-body"></div>
+        </div>
+      </div>
+      <!-- bottom search desktop-->
+      <div class="search-bottom desktop-hide">
+        <div class="container">
+          <div class="wrapper">
+            <form action="" class="search">
+              <a href="#" class="t-close search-close flexcenter">
+                <i class="ri-close-line"></i>
+              </a>
+              <span class="large-icon"><i class="ri-search-line"></i></span>
+              <input type="search" placeholder="Search for a product" required />
+              <button type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- overlay -->
+      <div class="overlay"></div>
+      <!-- Improved Back to Top Button -->
+      <div class="backtotop" aria-label="Back to top">
+        <a href="#top" class="flexcol smooth-scroll">
+          <i class="ri-arrow-up-line"></i>
+        </a>
+      </div>
+    </footer>
+  </div>
+   <!-- Show notification message if product is already exist or no -->
+   <div id="cartNotification" class="showCartNotification">
+    <i class="ri-shopping-cart-line"></i>
+    <span id="notificationMessage"></span>
+  </div>
+  
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <!-- FS Lightbox -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.4.2/index.js"></script>
+  <script src="/js/script.js"></script>
+  <!-- <script src="js/script.js"></script> -->
+  <script src="js/confirmation.js"></script>
+
+</body>
+
+</html>
